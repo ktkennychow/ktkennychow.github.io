@@ -5,7 +5,7 @@ import projects from '../data/projects'
 const Projects = () => (
   <div
     id='projects'
-    className='flex flex-col gap-2.5 pt-10 max-w-3xl'>
+    className='flex flex-col gap-2.5 pt-10'>
     <h2 className='text-3xl font-semibold'>Projects</h2>
     <div className='flex flex-col gap-10'>
       {projects.map((project) => (

@@ -15,7 +15,7 @@ const Nav = () => {
 
   return (
     <div ref={app}>
-      <nav className='sticky flex flex-col top-0 text-white h-screen items-center'>
+      <nav className='sticky flex flex-col top-0 right-0 text-white h-screen items-center'>
         <div className='top-line w-1 flex-1 bg-white mb-3'></div>
         <ul>
           <li

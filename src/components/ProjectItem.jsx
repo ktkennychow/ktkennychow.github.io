@@ -8,14 +8,14 @@ const ProjectItem = ({
   github,
   website,
 }) => (
-  <div className='flex flex-col gap-1'>
+  <div className='flex flex-col gap-1 max-w-4xl'>
     <h3 className='font-semibold '>{title}</h3>
-    <h3 className='text-sm'>{description}</h3>
+    <h3 className='text-sm max-w-xl'>{description}</h3>
     <div className='flex flex-col gap-2'>
       <img
         src={imgUrl}
         alt='Project Photo'
-        className='object-cover cursor-pointer aspect-video'
+        className='object-cover cursor-pointer aspect-video '
       />
       <div className='flex gap-4'>
         <div className='flex gap-1'>

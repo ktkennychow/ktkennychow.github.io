@@ -57,130 +57,132 @@ const Resume = () => (
     </div>
     <div className='flex flex-col gap-2.5'>
       <h2 className='text-3xl font-semibold'>Skills</h2>
-      <div className='flex flex-col gap-1 font-normal'>
-        <h3 className='text-lg'>Technologies</h3>
-        <div className='flex gap-2.5 text-zinc-900  text-sm'>
-          <div className='flex flex-col gap-2'>
-            <h4 className='bg-white flex items-center gap-1 px-2 py-1 w-32'>
-              <TbBrandJavascript />
-              JavaScript
-            </h4>
-            <h4 className='bg-white flex items-center gap-1 px-2 py-1 w-32'>
-              <TbBrandTypescript />
-              TypeScript
-            </h4>
-            <h4 className='bg-white flex items-center gap-1 px-2 py-1 w-32'>
-              <TbBrandReact />
-              React
-            </h4>
-            <h4 className='bg-white flex items-center gap-1 px-2 py-1 w-32'>
-              <TbBrandRedux />
-              Redux
-            </h4>
-            <h4 className='bg-white flex items-center gap-1 px-2 py-1 w-32'>
-              <TbBrandGraphql />
-              GraphQL
-            </h4>
-            <h4 className='bg-white flex items-center gap-1 px-2 py-1 w-32'>
-              <TbBrandTailwind />
-              TailwindCSS
-            </h4>
-            <h4 className='bg-white flex items-center gap-1 px-2 py-1 w-32'>
-              <TbBrandHtml5 />
-              HTML
-            </h4>
-            <h4 className='bg-white flex items-center gap-1 px-2 py-1 w-32'>
-              <TbBrandCss3 />
-              CSS
-            </h4>
-          </div>
-          <div className='flex flex-col gap-2'>
-            <h4 className='bg-white flex items-center gap-1 px-2 py-1 w-32'>
-              <SiNodedotjs />
-              Node
-            </h4>
-            <h4 className='bg-white flex items-center gap-1 px-2 py-1 w-32'>
-              <SiExpress />
-              Express
-            </h4>
-            <h4 className='bg-white flex items-center gap-1 px-2 py-1 w-32'>
-              <TbBrandNextjs />
-              Next.js
-            </h4>
-            <h4 className='bg-white flex items-center gap-1 px-2 py-1 w-32'>
-              <TbBrandFirebase />
-              Firebase
-            </h4>
-            <h4 className='bg-white flex items-center gap-1 px-2 py-1 w-32'>
-              <TbBrandMongodb />
-              MongoDB
-            </h4>
-            <h4 className='bg-white flex items-center gap-1 px-2 py-1 w-32'>
-              <TbBrandMysql />
-              MySQL
-            </h4>
-            <h4 className='bg-white flex items-center gap-1 px-2 py-1 w-32'>
-              <BiLogoPostgresql />
-              PostgreSQL
-            </h4>
-          </div>
-          <div className='flex flex-col gap-2'>
-            <h4 className='bg-white flex items-center gap-1 px-2 py-1 w-32'>
-              <SiJest />
-              Jest
-            </h4>
-            <h4 className='bg-white flex items-center gap-1 px-2 py-1 w-32'>
-              <TbBrandCypress />
-              Cypress
-            </h4>
-            <h4 className='bg-white flex items-center gap-1 px-2 py-1 w-32'>
-              <TbBrandDocker />
-              Docker
-            </h4>
-            <h4 className='bg-white flex items-center gap-1 px-2 py-1 w-32'>
-              <SiYaml />
-              YAML
-            </h4>
-            <h4 className='bg-white flex items-center gap-1 px-2 py-1 w-32'>
-              <TbBrandGithub />
-              Github
-            </h4>
-            <h4 className='bg-white flex items-center gap-1 px-2 py-1 w-32'>
-              <TbBrandPython />
-              Python
-            </h4>
+      <div className='flex flex-col md:flex-row gap-2.5'>
+        <div className='flex flex-col gap-1 font-normal'>
+          <h3 className='text-lg'>Technologies</h3>
+          <div className='flex gap-2.5 text-zinc-900 text-xs'>
+            <div className='flex flex-col gap-2'>
+              <h4 className='bg-white flex items-center gap-1 p-1 w-24'>
+                <TbBrandJavascript />
+                JavaScript
+              </h4>
+              <h4 className='bg-white flex items-center gap-1 p-1 w-24'>
+                <TbBrandTypescript />
+                TypeScript
+              </h4>
+              <h4 className='bg-white flex items-center gap-1 p-1 w-24'>
+                <TbBrandReact />
+                React
+              </h4>
+              <h4 className='bg-white flex items-center gap-1 p-1 w-24'>
+                <TbBrandRedux />
+                Redux
+              </h4>
+              <h4 className='bg-white flex items-center gap-1 p-1 w-24'>
+                <TbBrandGraphql />
+                GraphQL
+              </h4>
+              <h4 className='bg-white flex items-center gap-1 p-1 w-24'>
+                <TbBrandTailwind />
+                TailwindCSS
+              </h4>
+              <h4 className='bg-white flex items-center gap-1 p-1 w-24'>
+                <TbBrandHtml5 />
+                HTML
+              </h4>
+              <h4 className='bg-white flex items-center gap-1 p-1 w-24'>
+                <TbBrandCss3 />
+                CSS
+              </h4>
+            </div>
+            <div className='flex flex-col gap-2'>
+              <h4 className='bg-white flex items-center gap-1 p-1 w-24'>
+                <SiNodedotjs />
+                Node
+              </h4>
+              <h4 className='bg-white flex items-center gap-1 p-1 w-24'>
+                <SiExpress />
+                Express
+              </h4>
+              <h4 className='bg-white flex items-center gap-1 p-1 w-24'>
+                <TbBrandNextjs />
+                Next.js
+              </h4>
+              <h4 className='bg-white flex items-center gap-1 p-1 w-24'>
+                <TbBrandFirebase />
+                Firebase
+              </h4>
+              <h4 className='bg-white flex items-center gap-1 p-1 w-24'>
+                <TbBrandMongodb />
+                MongoDB
+              </h4>
+              <h4 className='bg-white flex items-center gap-1 p-1 w-24'>
+                <TbBrandMysql />
+                MySQL
+              </h4>
+              <h4 className='bg-white flex items-center gap-1 p-1 w-24'>
+                <BiLogoPostgresql />
+                PostgreSQL
+              </h4>
+            </div>
+            <div className='flex flex-col gap-2'>
+              <h4 className='bg-white flex items-center gap-1 p-1 w-24'>
+                <SiJest />
+                Jest
+              </h4>
+              <h4 className='bg-white flex items-center gap-1 p-1 w-24'>
+                <TbBrandCypress />
+                Cypress
+              </h4>
+              <h4 className='bg-white flex items-center gap-1 p-1 w-24'>
+                <TbBrandDocker />
+                Docker
+              </h4>
+              <h4 className='bg-white flex items-center gap-1 p-1 w-24'>
+                <SiYaml />
+                YAML
+              </h4>
+              <h4 className='bg-white flex items-center gap-1 p-1 w-24'>
+                <TbBrandGithub />
+                Github
+              </h4>
+              <h4 className='bg-white flex items-center gap-1 p-1 w-24'>
+                <TbBrandPython />
+                Python
+              </h4>
+            </div>
           </div>
         </div>
-      </div>
-      <div className='flex gap-2.5 mt-4'>
-        <div className='flex flex-col gap-1 font-normal'>
-          <h3 className='text-lg'>Design</h3>
-          <div className='flex flex-col gap-2 text-zinc-900  text-sm'>
-            <h4 className='bg-white flex items-center gap-1 px-2 py-1 w-32'>
-              <TbBrandFigma />
-              Figma
-            </h4>
-            <h4 className='bg-white flex items-center gap-1 px-2 py-1 w-32'>
-              <SiAdobeillustrator />
-              Illustrator
-            </h4>
-            <h4 className='bg-white flex items-center gap-1 px-2 py-1 w-32'>
-              <SiAdobephotoshop />
-              PhotoShop
-            </h4>
+        <div className='flex gap-2.5'>
+          <div className='flex flex-col gap-1 font-normal'>
+            <h3 className='text-lg'>Design</h3>
+            <div className='flex flex-col gap-2 text-zinc-900  text-xs'>
+              <h4 className='bg-white flex items-center gap-1 p-1 w-24'>
+                <TbBrandFigma />
+                Figma
+              </h4>
+              <h4 className='bg-white flex items-center gap-1 p-1 w-24'>
+                <SiAdobeillustrator />
+                Illustrator
+              </h4>
+              <h4 className='bg-white flex items-center gap-1 p-1 w-24'>
+                <SiAdobephotoshop />
+                PhotoShop
+              </h4>
+            </div>
           </div>
-        </div>
-        <div className='flex flex-col gap-1 font-normal'>
-          <h3 className='text-lg'>Language</h3>
-          <div className='flex flex-col gap-2 text-zinc-900  text-sm'>
-            <h4 className='bg-white flex items-center gap-1 px-2 py-1 w-32'>
-              <TbLanguage />
-              Chinese
-            </h4>
-            <h4 className='bg-white flex items-center gap-1 px-2 py-1 w-32'>
-              <TbLanguage />
-              Korean
-            </h4>
+          <div className='flex flex-col gap-1 font-normal'>
+            <h3 className='text-lg'>Language</h3>
+            <div className='flex flex-col gap-2 text-zinc-900  text-xs'>
+              <h4 className='bg-white flex items-center gap-1 p-1 w-24'>
+                <TbLanguage />
+                Chinese
+              </h4>
+              <h4 className='bg-white flex items-center gap-1 p-1 w-24'>
+                <TbLanguage />
+                Korean
+              </h4>
+            </div>
           </div>
         </div>
       </div>
