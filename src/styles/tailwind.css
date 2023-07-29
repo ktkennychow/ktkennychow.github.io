@@ -4,6 +4,8 @@
 
 *::-webkit-scrollbar {
   display: none;
+  width: 0px;
+  background: transparent;
 }
 
 * {
@@ -24,4 +26,3 @@
 body * {
   orphans: 3;
 }
-
