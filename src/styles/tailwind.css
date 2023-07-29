@@ -4,9 +4,8 @@
 
 *::-webkit-scrollbar {
   display: none;
-  width: 0px;
-  background: transparent;
 }
+
 
 * {
   -ms-overflow-style: none; /* IE and Edge */
@@ -14,7 +13,9 @@
 }
 
 * {
+  
   overscroll-behavior: none;
+  
 }
 
 * {

@@ -25,7 +25,7 @@ const App = () => {
 
   return (
     <div>
-      <div className='z-10 bg-zinc-900 text-stone-300 flex h-full font-poppins font-light overscroll-none no-scrollbar justify-between'>
+      <div className='z-10 bg-zinc-900 text-stone-300 flex h-full w-screen font-poppins font-light overscroll-none no-scrollbar justify-between'>
         <div className='flex flex-col gap-32 pt-12 ml-5 md:ml-10'>
           <Intro />
           <Projects />
