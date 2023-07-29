@@ -1,68 +1,56 @@
-import React, { useState, useEffect } from "react";
-import Intro from "./components/Intro";
-import Portfolio from "./components/Portfolio";
-import Timeline from "./components/Timeline";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+import React, { useState, useEffect } from 'react'
+import Intro from './components/Intro'
+import Portfolio from './components/Projects'
+import Contact from './components/Contact'
+import Nav from './components/Nav'
+import Skills from './components/Resume'
 
 const App = () => {
-	const [theme, setTheme] = useState(null);
-	const [email, setEmail] = useState("");
+  const [theme, setTheme] = useState('dark')
 
-	const themeToggleHandler = () => {
-		setTheme(theme === "dark" ? "light" : "dark");
-	};
+  const themeToggleHandler = (mode) => {
+    setTheme(mode)
+  }
 
-	useEffect(
-		function setCSSTheme() {
-			if (theme === "dark") {
-				document.documentElement.classList.add("dark");
-			} else {
-				document.documentElement.classList.remove("dark");
-			}
-		},
-		[theme]
-	);
+  useEffect(
+    function setCSSTheme() {
+      if (theme === 'dark') {
+        document.documentElement.classList.add('dark')
+      } else {
+        document.documentElement.classList.remove('dark')
+      }
+    },
+    [theme]
+  )
 
-	useEffect(function toggleDarkMode() {
-		if (window.matchMedia("(prefer-color-scheme:dark)").matches) {
-			setTheme("dark");
-		} else {
-			setTheme("light");
-		}
-	}, []);
+  const Box = () => {
+    return (
+      <mesh
+        visible
+        userData={{ hello: 'world' }}
+        position={[1, 2, 3]}
+        rotation={[Math.PI / 2, 0, 0]}>
+        <sphereGeometry args={[1, 16, 16]} />
+        <meshStandardMaterial
+          color='hotpink'
+          transparent
+        />
+      </mesh>
+    )
+  }
+  return (
+    <>
+      <div className='relative z-10 bg-gray-900  text-stone-300 flex h-full font-poppins font-light overscroll-none no-scrollbar'>
+        <div className='flex flex-col gap-32 pt-12 pl-5'>
+          <Intro />
+          <Portfolio />
+          <Skills />
+          <Contact />
+        </div>
+        <Nav themeToggleHandler={themeToggleHandler} />
+      </div>
+    </>
+  )
+}
 
-	useEffect(function delayShowingEmail() {
-		setTimeout(() => {
-			setEmail(() => "mailto:".concat(atob("ZW1haWxAYWRkcmVzcy5jb20=")));
-		}, 2000);
-	}, []);
-
-	return (
-		<div>
-			<button
-				type='button'
-				onClick={themeToggleHandler}
-				className='fixed w-10 h-10 z-10 right-20 top-4 bg-violet-300 text-white dark:bg-orange-300 dark:text-black text-lg rounded-md'
-			>
-				{theme === "dark" ? (
-					<i class='fa fa-sun'></i>
-				) : (
-					<i class='fa fa-moon'></i>
-				)}
-			</button>
-			<div className='bg-white dark:bg-stone-900 text-stone-900 dark:text-stone-300 min-h-screen font-inter'>
-				<div className=' max-w-5xl w-11/12 mx-auto'>
-
-				<Intro />
-				<Contact email={email} />
-				<Portfolio />
-				<Timeline />
-				<Footer />
-				</div>
-			</div>
-		</div>
-	);
-};
-
-export default App;
+export default App

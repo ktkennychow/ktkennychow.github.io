@@ -5,7 +5,8 @@ export default {
 	theme: {
 		extend: {
       fontFamily: {
-				inter: ["inter", "serif"],
+				'montserrat': ["Montserrat", "serif"],
+				'poppins': ["Poppins", "serif"],
 			}
     },
 	},
