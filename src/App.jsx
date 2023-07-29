@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react'
-import Intro from './components/Intro'
-import Portfolio from './components/Projects'
-import Contact from './components/Contact'
 import Nav from './components/Nav'
-import Skills from './components/Resume'
+import Intro from './components/Intro'
+import Projects from './components/Projects'
+import Resume from './components/Resume'
+import Contact from './components/Contact'
 
 const App = () => {
   const [theme, setTheme] = useState('dark')
@@ -23,28 +23,13 @@ const App = () => {
     [theme]
   )
 
-  const Box = () => {
-    return (
-      <mesh
-        visible
-        userData={{ hello: 'world' }}
-        position={[1, 2, 3]}
-        rotation={[Math.PI / 2, 0, 0]}>
-        <sphereGeometry args={[1, 16, 16]} />
-        <meshStandardMaterial
-          color='hotpink'
-          transparent
-        />
-      </mesh>
-    )
-  }
   return (
     <>
       <div className='relative z-10 bg-gray-900  text-stone-300 flex h-full font-poppins font-light overscroll-none no-scrollbar'>
         <div className='flex flex-col gap-32 pt-12 pl-5'>
           <Intro />
-          <Portfolio />
-          <Skills />
+          <Projects />
+          <Resume />
           <Contact />
         </div>
         <Nav themeToggleHandler={themeToggleHandler} />
