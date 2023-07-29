@@ -24,9 +24,9 @@ const App = () => {
   )
 
   return (
-    <>
-      <div className='relative z-10 bg-gray-900  text-stone-300 flex h-full font-poppins font-light overscroll-none no-scrollbar'>
-        <div className='flex flex-col gap-32 pt-12 pl-5'>
+    <div>
+      <div className='relative z-10 bg-zinc-900  text-stone-300 flex h-full font-poppins font-light overscroll-none no-scrollbar justify-between'>
+        <div className='flex flex-col gap-32 pt-12 ml-5 md:ml-10'>
           <Intro />
           <Projects />
           <Resume />
@@ -34,7 +34,7 @@ const App = () => {
         </div>
         <Nav themeToggleHandler={themeToggleHandler} />
       </div>
-    </>
+    </div>
   )
 }
 

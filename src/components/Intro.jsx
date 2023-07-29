@@ -3,13 +3,13 @@ import React from 'react'
 const Intro = () => (
   <div
     id='about'
-    className='flex flex-col gap-4 w-full pt-10'>
+    className='flex flex-col gap-4 max-w-sm pt-10'>
     <img
       src='assets/profilePic.png'
       alt='Profile Picture of Kenny Chow'
-      className='w-36 bject-cover rounded-full'
+      className='w-36 md:w-72 bject-cover rounded-full'
     />
-    <h1 className='text-4xl text-white font-montserrat -m-1'>Kenny Chow</h1>
+    <h1 className='text-4xl md:text-6xl text-white font-montserrat -m-1'>Kenny Chow</h1>
     <div className='flex flex-col gap-12'>
       <p className='flex-1'>
         Full-Stack Developer

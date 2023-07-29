@@ -1,7 +1,7 @@
 import React from 'react'
 
 const ProjectItem = ({
-title,
+  title,
   imgUrl,
   stack,
   description,
@@ -14,8 +14,8 @@ title,
     <div className='flex flex-col gap-2'>
       <img
         src={imgUrl}
-        alt='portfolio'
-        className='w-full h-36 md:h-48 object-cover cursor-pointer'
+        alt='Project Photo'
+        className='object-cover cursor-pointer aspect-video'
       />
       <div className='flex gap-4'>
         <div className='flex gap-1'>
