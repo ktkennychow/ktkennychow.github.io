@@ -4,12 +4,14 @@
 
 *::-webkit-scrollbar {
   display: none;
+  background-color: transparent;
 }
 
 
 * {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+  scrollbar-color: transparent; /* Firefox */
 }
 
 * {
