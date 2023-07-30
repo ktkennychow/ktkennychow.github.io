@@ -15,7 +15,7 @@ const ProjectItem = ({
       <img
         src={imgUrl}
         alt='Project Photo'
-        className='object-contain cursor-pointer aspect-video '
+        className='object-cover object-top aspect-video'
       />
       <div className='flex gap-4'>
         {github.length > 0 ? (
