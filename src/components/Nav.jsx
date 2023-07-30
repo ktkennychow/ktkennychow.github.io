@@ -22,7 +22,9 @@ const Nav = () => {
             onMouseEnter={() => gsap.to('.about', { x: -20, duration: 1 })}
             onMouseLeave={() => gsap.to('.about', { x: 0, duration: 1 })}
             className={`about cursor-pointer text-xs py-2.5 px-2 md:text-base md:px-5 text-center ${
-              currentPage === 'about' ? 'bg-white font-normal text-black' : ''
+              currentPage === 'about'
+                ? 'bg-white font-normal text-black'
+                : 'bg-zinc-900'
             }`}>
             <a
               href='#about'
@@ -36,7 +38,7 @@ const Nav = () => {
             className={`projects cursor-pointer text-xs py-2.5 px-2 md:text-base md:px-5 text-center ${
               currentPage === 'projects'
                 ? 'bg-white font-normal text-black'
-                : ''
+                : 'bg-zinc-900'
             }`}>
             <a
               href='#projects'
@@ -48,7 +50,9 @@ const Nav = () => {
             onMouseEnter={() => gsap.to('.resume', { x: -20, duration: 1 })}
             onMouseLeave={() => gsap.to('.resume', { x: 0, duration: 1 })}
             className={`resume cursor-pointer text-xs py-2.5 px-2 md:text-base md:px-5 text-center  ${
-              currentPage === 'resume' ? 'bg-white font-normal text-black' : ''
+              currentPage === 'resume'
+                ? 'bg-white font-normal text-black'
+                : 'bg-zinc-900'
             }`}>
             <a
               href='#resume'
@@ -60,7 +64,9 @@ const Nav = () => {
             onMouseEnter={() => gsap.to('.contact', { x: -20, duration: 1 })}
             onMouseLeave={() => gsap.to('.contact', { x: 0, duration: 1 })}
             className={`contact cursor-pointer text-xs py-2.5 px-2 md:text-base md:px-5 text-center ${
-              currentPage === 'contact' ? 'bg-white font-normal text-black' : ''
+              currentPage === 'contact'
+                ? 'bg-white font-normal text-black'
+                : 'bg-zinc-900'
             }`}>
             <a
               href='#contact'

@@ -18,48 +18,52 @@ const ProjectItem = ({
         className='object-cover cursor-pointer aspect-video '
       />
       <div className='flex gap-4'>
-        <div className='flex gap-1'>
-          <a
-            href={github}
-            target='_blank'
-            rel='noopener noreferrer'
-            className='underline underline-offset-4 text-sm'>
-            GitHub Repo
-          </a>
-          <svg
-            width='8'
-            height='8'
-            viewBox='0 0 8 8'
-            fill='none'
-            xmlns='http://www.w3.org/2000/svg'>
-            <path
-              id='Vector 6'
-              d='M1 1H7M7 1V7M7 1L1 7'
-              stroke='white'
-            />
-          </svg>
-        </div>
-        <div className='flex gap-1'>
-          <a
-            href={website}
-            target='_blank'
-            rel='noopener noreferrer'
-            className='underline underline-offset-4 text-sm'>
-            Live Website
-          </a>
-          <svg
-            width='8'
-            height='8'
-            viewBox='0 0 8 8'
-            fill='none'
-            xmlns='http://www.w3.org/2000/svg'>
-            <path
-              id='Vector 6'
-              d='M1 1H7M7 1V7M7 1L1 7'
-              stroke='white'
-            />
-          </svg>
-        </div>
+        {github.length > 0 ? (
+          <div className='flex gap-1'>
+            <a
+              href={github}
+              target='_blank'
+              rel='noopener noreferrer'
+              className='underline underline-offset-4 text-sm'>
+              GitHub Repo
+            </a>
+            <svg
+              width='8'
+              height='8'
+              viewBox='0 0 8 8'
+              fill='none'
+              xmlns='http://www.w3.org/2000/svg'>
+              <path
+                id='Vector 6'
+                d='M1 1H7M7 1V7M7 1L1 7'
+                stroke='white'
+              />
+            </svg>
+          </div>
+        ) : null}
+        {website.length > 0 ? (
+          <div className='flex gap-1'>
+            <a
+              href={website}
+              target='_blank'
+              rel='noopener noreferrer'
+              className='underline underline-offset-4 text-sm'>
+              Live Website
+            </a>
+            <svg
+              width='8'
+              height='8'
+              viewBox='0 0 8 8'
+              fill='none'
+              xmlns='http://www.w3.org/2000/svg'>
+              <path
+                id='Vector 6'
+                d='M1 1H7M7 1V7M7 1L1 7'
+                stroke='white'
+              />
+            </svg>
+          </div>
+        ) : null}
       </div>
       <div>
         <p className='flex flex-wrap gap-2 flex-row items-center justify-start text-xs'>
