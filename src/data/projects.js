@@ -32,7 +32,7 @@ export default [
     id: 4,
     title: 'WiserJournal - Journaling + AI',
     description:
-      '[IN CONSTRUCTION] Daily journaling, reflection, and self-improvement with an AI coach, personalized.',
+      '[IN CONSTRUCTION] Daily journaling, reflection, and self-improvement with an AI coach, personalized for you.',
     imgUrl: 'assets/proj_photo_wj.jpg',
     github: '',
     website: '',
