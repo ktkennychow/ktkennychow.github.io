@@ -193,8 +193,7 @@ const Resume = () => (
         <p className='font-normal'>Project Manager & Product Owner</p>
         <ul className='pl-6 mt-2.5 flex flex-col gap-2.5 list-disc'>
           <li>
-            Manage a cross-functional team of 7 members, including both in-house
-            and vendor resources, for {''}
+            Manage a cross-functional team of 5 members and vendors for {''}
             <a
               href='https://volantechnology.com/'
               target='_blank'
@@ -219,7 +218,7 @@ const Resume = () => (
             monitoring solutions.
           </li>
           <li>
-            Lead the initiative to consolidate three distinct devices into a
+            Lead the initiative to consolidate three individual solutions into a
             single solution, resulting in a 40% reduction in tooling and quality
             assurance costs.
           </li>
