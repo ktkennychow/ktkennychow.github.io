@@ -36,7 +36,7 @@ const Resume = () => (
     className='flex flex-col gap-12 pt-10'>
     <div className='flex gap-1'>
       <a
-        href='https://docs.google.com/document/d/1mbMRR4SPd-eNFf0irI68nCRGxiCdyRJrN1EJPvOPTvI/edit?usp=sharing'
+        href='https://drive.google.com/file/d/1nD5nvxbNYADVaDUyVPl5At-R0wvToEWu/view?usp=drive_link'
         target='_blank'
         rel='noopener noreferrer'
         className='underline underline-offset-4 text-3xl'>

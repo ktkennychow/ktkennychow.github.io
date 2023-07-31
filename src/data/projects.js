@@ -22,7 +22,7 @@ export default [
     id: 3,
     title: 'OnlyFriends - Your message board',
     description:
-      'A real-time message board for only your friends where you can log in, create posts, and comment with the ability to edit and delete.',
+      'A real-time message board for only your friends! Where you can only sign in with a secret code. Functionalities include include post creation, editing, removal, and comment.',
     imgUrl: 'assets/proj_photo_of.jpg',
     github: 'https://github.com/kennychowpd/nextjs-onlyfriends',
     website: 'https://nextjs-onlyfriends.vercel.app/',
