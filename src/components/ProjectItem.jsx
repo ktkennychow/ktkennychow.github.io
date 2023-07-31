@@ -70,7 +70,7 @@ const ProjectItem = ({
           {stack.map((item) => (
             <span
               key={item}
-              className='inline-block px-2 py-1 font-semibold bg-white text-gray-900'>
+              className='inline-block px-4 py-2 font-semibold bg-white text-gray-900'>
               {item}
             </span>
           ))}
