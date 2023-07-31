@@ -1,4 +1,5 @@
 import React from 'react'
+import { Tb123 } from 'react-icons/tb'
 
 const ProjectItem = ({
   title,
@@ -70,7 +71,17 @@ const ProjectItem = ({
           {stack.map((item) => (
             <span
               key={item}
-              className='inline-block px-4 py-2 font-semibold bg-white text-gray-900'>
+              className='flex px-3 py-1.5 font-normal bg-white text-gray-900 rounded-full items-center gap-2'>
+              <svg
+                xmlns='http://www.w3.org/2000/svg'
+                width='10'
+                height='10'
+                viewBox='0 0 20 20
+                'className='w-4'>
+                
+                <path d='M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z' />
+              </svg>
+
               {item}
             </span>
           ))}

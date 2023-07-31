@@ -20,7 +20,7 @@ const Nav = () => {
         <ul>
           <li
             onMouseEnter={() => gsap.to('.about', { x: -20, duration: 1 })}
-            onMouseLeave={() => gsap.to('.about', { x: 0, duration: 1 })}
+            onMouseOut={() => gsap.to('.about', { x: 0, duration: 1 })}
             className={`about cursor-pointer text-xs py-2.5 px-2 md:text-base md:px-5 text-center ${
               currentPage === 'about'
                 ? 'bg-white font-normal text-black'
@@ -34,7 +34,7 @@ const Nav = () => {
           </li>
           <li
             onMouseEnter={() => gsap.to('.projects', { x: -20, duration: 1 })}
-            onMouseLeave={() => gsap.to('.projects', { x: 0, duration: 1 })}
+            onMouseOut={() => gsap.to('.projects', { x: 0, duration: 1 })}
             className={`projects cursor-pointer text-xs py-2.5 px-2 md:text-base md:px-5 text-center ${
               currentPage === 'projects'
                 ? 'bg-white font-normal text-black'
@@ -48,7 +48,7 @@ const Nav = () => {
           </li>
           <li
             onMouseEnter={() => gsap.to('.resume', { x: -20, duration: 1 })}
-            onMouseLeave={() => gsap.to('.resume', { x: 0, duration: 1 })}
+            onMouseOut={() => gsap.to('.resume', { x: 0, duration: 1 })}
             className={`resume cursor-pointer text-xs py-2.5 px-2 md:text-base md:px-5 text-center  ${
               currentPage === 'resume'
                 ? 'bg-white font-normal text-black'
@@ -62,7 +62,7 @@ const Nav = () => {
           </li>
           <li
             onMouseEnter={() => gsap.to('.contact', { x: -20, duration: 1 })}
-            onMouseLeave={() => gsap.to('.contact', { x: 0, duration: 1 })}
+            onMouseOut={() => gsap.to('.contact', { x: 0, duration: 1 })}
             className={`contact cursor-pointer text-xs py-2.5 px-2 md:text-base md:px-5 text-center ${
               currentPage === 'contact'
                 ? 'bg-white font-normal text-black'

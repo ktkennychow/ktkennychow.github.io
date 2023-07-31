@@ -20,12 +20,12 @@ const Intro = () => {
             <br />& Product Designer
           </p>
           <p className='flex-1'>
-            I like to design and develop products with great user experience
+            I like designing and developing products with great user experiences
             that help increase productivity and connect people.
             <br />
+            <br />
             I believe that the best products are built through the power of
-            well-constructed codebases that allow rapid development and active
-            observations of how we, humans, behave.
+            well-constructed codebases that allow rapid development, and our ability to understand how we, humans, behave.
             <br />
             <br />
             ...And I also love bouldering, running, cooking, and trying new
