@@ -25,7 +25,7 @@ const ProjectItem = ({
               href={github}
               target='_blank'
               rel='noopener noreferrer'
-              className='underline underline-offset-4 text-sm'>
+              className='underline underline-offset-4 text-sm md:text-base'>
               GitHub Repo
             </a>
             <svg
@@ -48,7 +48,7 @@ const ProjectItem = ({
               href={website}
               target='_blank'
               rel='noopener noreferrer'
-              className='underline underline-offset-4 text-sm'>
+              className='underline underline-offset-4 text-sm md:text-base'>
               Live Website
             </a>
             <svg
@@ -67,7 +67,7 @@ const ProjectItem = ({
         ) : null}
       </div>
       <div>
-        <p className='flex flex-wrap gap-2 flex-row items-center justify-start text-xs'>
+        <p className='flex flex-wrap gap-2 flex-row items-center justify-start text-xs md:text-sm'>
           {stack.map((item) => (
             <span
               key={item}
