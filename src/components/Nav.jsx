@@ -21,7 +21,7 @@ const Nav = () => {
           <li
             onMouseOver={() => gsap.to('.about', { x: -20, duration: 1 })}
             onMouseOut={() => gsap.to('.about', { x: 0, duration: 1 })}
-            onTouchMove={() => gsap.to('.about', { x: 0, duration: 1 })}
+            onScrollCapture={() => gsap.to('.about', { x: 0, duration: 1 })}
             className={`about cursor-pointer text-xs py-2.5 px-2 md:text-base md:px-5 text-center ${
               currentPage === 'about'
                 ? 'bg-white font-normal text-black'
