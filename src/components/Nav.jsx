@@ -6,22 +6,25 @@ const Nav = () => {
   const app = React.useRef()
   React.useLayoutEffect(() => {
     let ctx = gsap.context(() => {
-      gsap.from('ul', { opacity: 0, x: 100, duration: 1.5 })
-      gsap.from('.top-line', { opacity: 0, y: -1000, duration: 1.5 })
-      gsap.from('.bottom-line', { opacity: 0, y: 1000, duration: 1.5 })
+      gsap.from('ul', { opacity: 0, x: 100, duration: 1 })
+      gsap.from('.top-line', { opacity: 0, y: -1000, duration: 1 })
+      gsap.from('.bottom-line', { opacity: 0, y: 1000, duration: 1 })
     }, app)
     return () => ctx.revert()
   }, [])
 
+  const animationHandler = () => {
+    e
+  }
+
   return (
     <div ref={app}>
       <nav className='sticky flex flex-col top-0 text-white h-screen items-center z-10'>
-        <div className='top-line w-1 flex-1 bg-white'></div>
+        <div className='top-line w-1 flex-1 mb-4 bg-white'></div>
         <ul>
           <li
-            onMouseOver={() => gsap.to('.about', { x: -20, duration: 1 })}
-            onMouseOut={() => gsap.to('.about', { x: 0, duration: 1 })}
-            onScrollCapture={() => gsap.to('.about', { x: 0, duration: 1 })}
+            onMouseEnter={() => gsap.to('.about', { x: -20, duration: 1 })}
+            onMouseleave={() => gsap.to('.about', { x: 0, duration: 1 })}
             className={`about cursor-pointer text-xs py-2.5 px-2 md:text-base md:px-5 text-center ${
               currentPage === 'about'
                 ? 'bg-white font-normal text-black'
@@ -76,7 +79,7 @@ const Nav = () => {
             </a>
           </li>
         </ul>
-        <div className='bottom-line w-1 flex-1 bg-white'></div>
+        <div className='bottom-line w-1 flex-1 bg-white mt-4'></div>
       </nav>
     </div>
   )

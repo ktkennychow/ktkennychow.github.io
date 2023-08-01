@@ -32,7 +32,9 @@ const App = () => {
   )
 
   return (
-    <div ref={body}>
+    <div
+      ref={body}
+      onWheel={() => gsap.to('li', { x: 0, duration: 1 })}>
       <div className='z-10 bg-zinc-900 text-stone-300 flex h-full max-w-full font-poppins font-light overscroll-none justify-between'>
         <div
           id='main'
