@@ -24,7 +24,7 @@ const Nav = () => {
         <ul>
           <li
             onMouseEnter={() => gsap.to('.about', { x: -20, duration: 1 })}
-            onMouseleave={() => gsap.to('.about', { x: 0, duration: 1 })}
+            onMouseLeave={() => gsap.to('.about', { x: 0, duration: 1 })}
             className={`about cursor-pointer text-xs py-2.5 px-2 md:text-base md:px-5 text-center ${
               currentPage === 'about'
                 ? 'bg-white font-normal text-black'
