@@ -37,8 +37,14 @@ const App = () => {
         <div
           id='main'
           className='flex flex-col gap-32 pt-12 ml-5 md:ml-10'
-          onMouseOver={() => gsap.to('li', { x: 0, duration: 1 })}
-          onMouseEnter={() => gsap.to('li', { x: 0, duration: 1 })}>
+          onPointerEnter={() => gsap.to('li', { x: 0, duration: 1 })}
+          onPointerEnterCapture={() => gsap.to('li', { x: 0, duration: 1 })}
+          onPointerOver={() => gsap.to('li', { x: 0, duration: 1 })}
+          onPointerOverCapture={() => gsap.to('li', { x: 0, duration: 1 })}
+          onTouchStart={() => gsap.to('li', { x: 0, duration: 1 })}
+          onScroll={() => gsap.to('li', { x: 0, duration: 1 })}
+          onTouchStartCapture={() => gsap.to('li', { x: 0, duration: 1 })}
+          >
           <Intro />
           <Projects />
           <Resume />
