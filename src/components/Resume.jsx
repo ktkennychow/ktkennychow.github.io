@@ -116,7 +116,6 @@ const Resume = () => (
                 <SiExpress />
                 Express
               </h4>
-
               <h4 className='bg-white flex items-center gap-1 py-1 px-2 w-32'>
                 <TbBrandFirebase />
                 Firebase
@@ -128,10 +127,6 @@ const Resume = () => (
               <h4 className='bg-white flex items-center gap-1 py-1 px-2 w-32'>
                 <TbBrandMysql />
                 MySQL
-              </h4>
-              <h4 className='bg-white flex items-center gap-1 py-1 px-2 w-32'>
-                <BiLogoPostgresql />
-                PostgreSQL
               </h4>
               <h4 className='bg-white flex items-center gap-1 py-1 px-2 w-32'>
                 <TbBrandDocker />

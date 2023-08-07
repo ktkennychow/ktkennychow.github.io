@@ -11,7 +11,7 @@ const App = () => {
   const body = React.useRef()
   React.useLayoutEffect(() => {
     let ctx = gsap.context(() => {
-      gsap.from('#main', { opacity: 0, x: -1000, duration: 1.5 })
+      gsap.from('#main', { opacity: 0, x: -1000, duration: 1 })
     }, body)
     return () => ctx.revert()
   }, [])
@@ -37,7 +37,7 @@ const App = () => {
         <div
           id='main'
           className='flex flex-col gap-32 pt-12 ml-5 md:ml-10'
-          onTouchStart={() => gsap.to('li', { x: 0, duration: 1.5 })}
+          onTouchStart={() => gsap.to('li', { x: 0, duration: 0.5 })}
           >
           <Intro />
           <Projects />

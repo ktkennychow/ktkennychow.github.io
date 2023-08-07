@@ -9,7 +9,7 @@ const ProjectItem = ({
   github,
   website,
 }) => (
-  <div className='flex flex-col gap-1 max-w-4xl'>
+  <div className='flex flex-col gap-1 max-w-4xl shadow-[0px_0px_20px_5px_rgb(0,0,0,0.0)] bg-zinc-800 shadow-zinc-700 p-5 rounded-xl mt-5'>
     <h3 className='font-semibold '>{title}</h3>
     <h3 className='text-sm max-w-xl'>{description}</h3>
     <div className='flex flex-col gap-2'>
@@ -77,8 +77,8 @@ const ProjectItem = ({
                 width='10'
                 height='10'
                 viewBox='0 0 20 20
-                'className='w-4'>
-                
+                '
+                className='w-4'>
                 <path d='M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z' />
               </svg>
 

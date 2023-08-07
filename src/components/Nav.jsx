@@ -6,9 +6,9 @@ const Nav = () => {
   const app = React.useRef()
   React.useLayoutEffect(() => {
     let ctx = gsap.context(() => {
-      gsap.from('ul', { opacity: 0, x: 100, duration: 1 })
-      gsap.from('.top-line', { opacity: 0, y: -1000, duration: 1 })
-      gsap.from('.bottom-line', { opacity: 0, y: 1000, duration: 1 })
+      gsap.from('ul', { opacity: 0, x: 100, duration: 0.75 })
+      gsap.from('.top-line', { opacity: 0, y: -1000, duration: 0.75 })
+      gsap.from('.bottom-line', { opacity: 0, y: 1000, duration: 0.75 })
     }, app)
     return () => ctx.revert()
   }, [])
@@ -23,8 +23,8 @@ const Nav = () => {
         <div className='top-line w-1 flex-1 mb-4 bg-white'></div>
         <ul>
           <li
-            onMouseEnter={() => gsap.to('.about', { x: -20, duration: 1 })}
-            onMouseLeave={() => gsap.to('.about', { x: 0, duration: 1 })}
+            onMouseEnter={() => gsap.to('.about', { x: -20, duration: 0.5 })}
+            onMouseLeave={() => gsap.to('.about', { x: 0, duration: 0.5 })}
             className={`about cursor-pointer text-xs py-2.5 px-2 md:text-base md:px-5 text-center ${
               currentPage === 'about'
                 ? 'bg-white font-normal text-black'
@@ -37,8 +37,8 @@ const Nav = () => {
             </a>
           </li>
           <li
-            onMouseEnter={() => gsap.to('.projects', { x: -20, duration: 1 })}
-            onMouseLeave={() => gsap.to('.projects', { x: 0, duration: 1 })}
+            onMouseEnter={() => gsap.to('.projects', { x: -20, duration: 0.5 })}
+            onMouseLeave={() => gsap.to('.projects', { x: 0, duration: 0.5 })}
             className={`projects cursor-pointer text-xs py-2.5 px-2 md:text-base md:px-5 text-center ${
               currentPage === 'projects'
                 ? 'bg-white font-normal text-black'
@@ -51,8 +51,8 @@ const Nav = () => {
             </a>
           </li>
           <li
-            onMouseEnter={() => gsap.to('.resume', { x: -20, duration: 1 })}
-            onMouseLeave={() => gsap.to('.resume', { x: 0, duration: 1 })}
+            onMouseEnter={() => gsap.to('.resume', { x: -20, duration: 0.5 })}
+            onMouseLeave={() => gsap.to('.resume', { x: 0, duration: 0.5 })}
             className={`resume cursor-pointer text-xs py-2.5 px-2 md:text-base md:px-5 text-center  ${
               currentPage === 'resume'
                 ? 'bg-white font-normal text-black'
@@ -65,8 +65,8 @@ const Nav = () => {
             </a>
           </li>
           <li
-            onMouseEnter={() => gsap.to('.contact', { x: -20, duration: 1 })}
-            onMouseLeave={() => gsap.to('.contact', { x: 0, duration: 1 })}
+            onMouseEnter={() => gsap.to('.contact', { x: -20, duration: 0.5 })}
+            onMouseLeave={() => gsap.to('.contact', { x: 0, duration: 0.5 })}
             className={`contact cursor-pointer text-xs py-2.5 px-2 md:text-base md:px-5 text-center ${
               currentPage === 'contact'
                 ? 'bg-white font-normal text-black'

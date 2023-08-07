@@ -1,3 +1,5 @@
+import { Si1001Tracklists } from 'react-icons/si';
+
 export default [
   // {
   //   id: 1,
@@ -19,20 +21,10 @@ export default [
   //   stack: ['TypeScript', 'React', 'Next.js', 'TailwindCSS', 'MySQL', 'Stripe'],
   // },
   {
-    id: 3,
-    title: 'OnlyFriends - Your message board',
-    description:
-      'A real-time message board for only your friends! Where you can only sign in with a secret code. Functionalities include include post creation, editing, removal, and comment.',
-    imgUrl: 'assets/proj_photo_of.jpg',
-    github: 'https://github.com/kennychowpd/nextjs-onlyfriends',
-    website: 'https://nextjs-onlyfriends.vercel.app/',
-    stack: ['JavaScript', 'React', 'Next.js', 'TailwindCSS', 'Firebase'],
-  },
-  {
-    id: 4,
+    id: 1,
     title: 'WiserJournal - Journaling + AI',
     description:
-      '[IN CONSTRUCTION] Daily journaling, reflection, and self-improvement with an AI coach, personalized for you.',
+      'Daily journaling, reflection, and self-improvement with an AI coach, personalized for you.',
     imgUrl: 'assets/proj_photo_wj.jpg',
     github: '',
     website: '',
@@ -45,4 +37,24 @@ export default [
       'MongoDB',
     ],
   },
+  {
+    id: 2,
+    title: 'OnlyFriends - private message board',
+    description:
+      'A real-time message board for only your friends! Where you can only sign in with a secret code.',
+    imgUrl: 'assets/proj_photo_of.jpg',
+    github: 'https://github.com/kennychowpd/nextjs-onlyfriends',
+    website: 'https://nextjs-onlyfriends.vercel.app/',
+    stack: ['JavaScript', 'React', 'Next.js', 'TailwindCSS', 'Firebase'],
+  },
+  {id: 3,
+  title: 'Markdown Previewer Retro',
+    description:
+      'A retro-styled markdown previewer to time travel with.',
+    imgUrl: 'assets/proj_photo_mp.jpg',
+    github: 'https://github.com/kennychowpd/retro-markdown-previewer',
+    website: 'https://retro-markdown-previewer.onrender.com/',
+    stack: ['typescript', 'React', 'TailwindCSS'],
+},
+  
 ]
