@@ -19,7 +19,7 @@ const Nav = () => {
       onTouchStart={() => gsap.to('li', { x: 0, duration: 0.5 })}>
       <nav className='sticky flex flex-col top-0 text-white h-screen items-center z-10'>
         <div className='sticky top-0 top-line w-1 flex-1  bg-white'></div>
-        <ul className='sticky top-1/2 right-0 my-4 -translate-y-1/2'>
+        <ul className='top-1/2 right-0 my-4 '>
           <li
             onMouseEnter={() => gsap.to('.about', { x: -20, duration: 0.5 })}
             onMouseLeave={() => gsap.to('.about', { x: 0, duration: 0.5 })}
