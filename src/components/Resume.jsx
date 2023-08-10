@@ -25,6 +25,7 @@ import {
   SiExpress,
   SiJest,
   SiNodedotjs,
+  SiStyledcomponents,
   SiYaml,
 } from 'react-icons/si'
 
@@ -34,27 +35,7 @@ const Resume = () => (
   <div
     id='resume'
     className='flex flex-col gap-12 pt-10'>
-    <div className='flex gap-1'>
-      <a
-        href='https://drive.google.com/file/d/1nD5nvxbNYADVaDUyVPl5At-R0wvToEWu/view?usp=drive_link'
-        target='_blank'
-        rel='noopener noreferrer'
-        className='underline underline-offset-4 text-3xl'>
-        Paper Resume
-      </a>
-      <svg
-        width='12'
-        height='12'
-        viewBox='0 0 8 8'
-        fill='none'
-        xmlns='http://www.w3.org/2000/svg'>
-        <path
-          id='Vector 6'
-          d='M1 1H7M7 1V7M7 1L1 7'
-          stroke='white'
-        />
-      </svg>
-    </div>
+    
     <div className='flex flex-col gap-2.5'>
       <h2 className='text-3xl font-semibold'>Skills</h2>
       <div className='flex flex-col md:flex-row gap-2.5 text-sm'>
@@ -91,6 +72,12 @@ const Resume = () => (
                 TailwindCSS
               </h4>
               <h4 className='bg-white flex items-center gap-1 py-1 px-2 w-32'>
+                <SiStyledcomponents />
+                Styled-
+                <br />
+                Components
+              </h4>
+              <h4 className='bg-white flex items-center gap-1 py-1 px-2 w-32'>
                 <TbBrandHtml5 />
                 HTML
               </h4>
@@ -98,10 +85,7 @@ const Resume = () => (
                 <TbBrandCss3 />
                 CSS
               </h4>
-              <h4 className='bg-white flex items-center gap-1 py-1 px-2 w-32'>
-                <SiJest />
-                Jest
-              </h4>
+
               <h4 className='bg-white flex items-center gap-1 py-1 px-2 w-32'>
                 <TbBrandCypress />
                 Cypress
@@ -129,6 +113,10 @@ const Resume = () => (
                 MySQL
               </h4>
               <h4 className='bg-white flex items-center gap-1 py-1 px-2 w-32'>
+                <BiLogoPostgresql />
+                PostgreSQL
+              </h4>
+              <h4 className='bg-white flex items-center gap-1 py-1 px-2 w-32'>
                 <TbBrandDocker />
                 Docker
               </h4>
@@ -143,6 +131,10 @@ const Resume = () => (
               <h4 className='bg-white flex items-center gap-1 py-1 px-2 w-32'>
                 <TbBrandPython />
                 Python
+              </h4>
+              <h4 className='bg-white flex items-center gap-1 py-1 px-2 w-32'>
+                <SiJest />
+                Jest
               </h4>
             </div>
           </div>

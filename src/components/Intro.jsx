@@ -26,13 +26,35 @@ const Intro = () => {
             <br />
             <br />
             I believe that the best products are built through the power of
-            well-constructed codebases that allow rapid development, and our ability to understand how we, humans, behave.
+            well-constructed codebases that allow rapid development, and our
+            ability to understand how we, humans, behave.
             <br />
             <br />
             ...And I also love bouldering, running, cooking, and trying new
             things!
           </p>
         </div>
+      </div>
+      <div className='flex gap-1 mt-10'>
+        <a
+          href='https://drive.google.com/file/d/1nD5nvxbNYADVaDUyVPl5At-R0wvToEWu/view?usp=drive_link'
+          target='_blank'
+          rel='noopener noreferrer'
+          className='underline underline-offset-4 text-3xl'>
+          Paper Resume
+        </a>
+        <svg
+          width='12'
+          height='12'
+          viewBox='0 0 8 8'
+          fill='none'
+          xmlns='http://www.w3.org/2000/svg'>
+          <path
+            id='Vector 6'
+            d='M1 1H7M7 1V7M7 1L1 7'
+            stroke='white'
+          />
+        </svg>
       </div>
     </div>
   )

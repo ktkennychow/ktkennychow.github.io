@@ -54,7 +54,7 @@ export default [
     imgUrl: 'assets/proj_photo_mp.jpg',
     github: 'https://github.com/kennychowpd/retro-markdown-previewer',
     website: 'https://retro-markdown-previewer.onrender.com/',
-    stack: ['typescript', 'React', 'TailwindCSS'],
+    stack: ['Typescript', 'React', 'TailwindCSS'],
 },
   
 ]
