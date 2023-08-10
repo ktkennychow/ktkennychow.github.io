@@ -27,7 +27,7 @@ const Nav = () => {
             className={`about cursor-pointer text-xs py-2.5 px-2 md:text-base md:px-5 text-center ${
               currentPage === 'about'
                 ? 'bg-white font-normal text-black'
-                : 'bg-zinc-900'
+                : 'bg-transparent'
             }`}>
             <a
               href='#about'
@@ -41,7 +41,7 @@ const Nav = () => {
             className={`projects cursor-pointer text-xs py-2.5 px-2 md:text-base md:px-5 text-center ${
               currentPage === 'projects'
                 ? 'bg-white font-normal text-black'
-                : 'bg-zinc-900'
+                : 'bg-transparent'
             }`}>
             <a
               href='#projects'
@@ -55,7 +55,7 @@ const Nav = () => {
             className={`resume cursor-pointer text-xs py-2.5 px-2 md:text-base md:px-5 text-center  ${
               currentPage === 'resume'
                 ? 'bg-white font-normal text-black'
-                : 'bg-zinc-900'
+                : 'bg-transparent'
             }`}>
             <a
               href='#resume'
@@ -69,7 +69,7 @@ const Nav = () => {
             className={`contact cursor-pointer text-xs py-2.5 px-2 md:text-base md:px-5 text-center ${
               currentPage === 'contact'
                 ? 'bg-white font-normal text-black'
-                : 'bg-zinc-900'
+                : 'bg-transparent'
             }`}>
             <a
               href='#contact'
