@@ -12,13 +12,12 @@ const Nav = () => {
     }, app)
     return () => ctx.revert()
   }, [])
-
-  const animationHandler = () => {
-    e
-  }
+  console.log(currentPage)
 
   return (
-    <div ref={app}>
+    <div
+      ref={app}
+      onTouchStart={() => gsap.to('li', { x: 0, duration: 0.5 })}>
       <nav className='sticky flex flex-col top-0 text-white h-screen items-center z-10'>
         <div className='top-line w-1 flex-1 mb-4 bg-white'></div>
         <ul>

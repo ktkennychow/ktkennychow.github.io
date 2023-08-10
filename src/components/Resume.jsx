@@ -72,7 +72,7 @@ const Resume = () => (
                 TailwindCSS
               </h4>
               <h4 className='bg-white flex items-center gap-1 py-1 px-2 w-32'>
-                <SiStyledcomponents />
+                <SiStyledcomponents className='text-base'/>
                 Styled-
                 <br />
                 Components

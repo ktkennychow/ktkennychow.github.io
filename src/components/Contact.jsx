@@ -3,7 +3,7 @@ import React from 'react'
 const Contact = () => (
   <div
     id='contact'
-    className='flex flex-col gap-4 pt-10'>
+    className='flex flex-col gap-4 py-10 mb-10'>
     <h2 className='text-3xl font-semibold'>Contact</h2>
     <div className='flex flex-wrap gap-2 pb-8'>
       <div className='flex gap-1'>

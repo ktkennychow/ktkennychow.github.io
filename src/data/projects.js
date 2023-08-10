@@ -39,7 +39,7 @@ export default [
   },
   {
     id: 2,
-    title: 'OnlyFriends - private message board',
+    title: 'OnlyFriends - Private Message Board',
     description:
       'A real-time message board for only your friends! Where you can only sign in with a secret code.',
     imgUrl: 'assets/proj_photo_of.jpg',
