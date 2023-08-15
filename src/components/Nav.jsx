@@ -12,7 +12,6 @@ const Nav = () => {
     }, app)
     return () => ctx.revert()
   }, [])
-  console.log(currentPage)
 
   return (
     <div

@@ -1,25 +1,18 @@
 import React from 'react'
 import {
-  TbBrandCss3,
   TbBrandCypress,
-  TbBrandDocker,
-  TbBrandFigma,
-  TbBrandFirebase,
-  TbBrandGithub,
   TbBrandGraphql,
-  TbBrandHtml5,
-  TbBrandJavascript,
-  TbBrandMongodb,
-  TbBrandMysql,
-  TbBrandNextjs,
-  TbBrandPython,
+  TbDatabase,
+  TbLanguage,
   TbBrandReact,
   TbBrandRedux,
-  TbBrandTypescript,
-  TbLanguage,
 } from 'react-icons/tb'
 import { BiLogoPostgresql } from 'react-icons/bi'
 import {
+  SiCss3,
+  SiTypescript,
+  SiJavascript,
+  SiHtml5,
   SiAdobeillustrator,
   SiAdobephotoshop,
   SiExpress,
@@ -27,15 +20,21 @@ import {
   SiNodedotjs,
   SiStyledcomponents,
   SiYaml,
+  SiMongodb,
+  SiFirebase,
+  SiNextdotjs,
+  SiDocker,
+  SiGithub,
+  SiPython,
+  SiTailwindcss,
 } from 'react-icons/si'
-
-import { TbBrandTailwind } from 'react-icons/tb'
+import { BiLogoFigma } from 'react-icons/bi'
+import { PiFileSqlFill } from 'react-icons/pi'
 
 const Resume = () => (
   <div
     id='resume'
     className='flex flex-col gap-12 pt-10'>
-    
     <div className='flex flex-col gap-2.5'>
       <h2 className='text-3xl font-semibold'>Skills</h2>
       <div className='flex flex-col md:flex-row gap-2.5 text-sm'>
@@ -44,11 +43,11 @@ const Resume = () => (
           <div className='flex gap-2.5 text-zinc-900 '>
             <div className='flex flex-col gap-2'>
               <h4 className='bg-white flex items-center gap-1 py-1 px-2 w-32'>
-                <TbBrandJavascript />
+                <SiJavascript />
                 JavaScript
               </h4>
               <h4 className='bg-white flex items-center gap-1 py-1 px-2 w-32'>
-                <TbBrandTypescript />
+                <SiTypescript />
                 TypeScript
               </h4>
               <h4 className='bg-white flex items-center gap-1 py-1 px-2 w-32'>
@@ -60,7 +59,7 @@ const Resume = () => (
                 Redux
               </h4>
               <h4 className='bg-white flex items-center gap-1 py-1 px-2 w-32'>
-                <TbBrandNextjs />
+                <SiNextdotjs />
                 Next.js
               </h4>
               <h4 className='bg-white flex items-center gap-1 py-1 px-2 w-32'>
@@ -68,21 +67,21 @@ const Resume = () => (
                 GraphQL
               </h4>
               <h4 className='bg-white flex items-center gap-1 py-1 px-2 w-32'>
-                <TbBrandTailwind />
+                <SiTailwindcss />
                 TailwindCSS
               </h4>
               <h4 className='bg-white flex items-center gap-1 py-1 px-2 w-32'>
-                <SiStyledcomponents className='text-base'/>
+                <SiStyledcomponents />
                 Styled-
                 <br />
                 Components
               </h4>
               <h4 className='bg-white flex items-center gap-1 py-1 px-2 w-32'>
-                <TbBrandHtml5 />
+                <SiHtml5 />
                 HTML
               </h4>
               <h4 className='bg-white flex items-center gap-1 py-1 px-2 w-32'>
-                <TbBrandCss3 />
+                <SiCss3 />
                 CSS
               </h4>
 
@@ -101,23 +100,27 @@ const Resume = () => (
                 Express
               </h4>
               <h4 className='bg-white flex items-center gap-1 py-1 px-2 w-32'>
-                <TbBrandFirebase />
-                Firebase
-              </h4>
-              <h4 className='bg-white flex items-center gap-1 py-1 px-2 w-32'>
-                <TbBrandMongodb />
-                MongoDB
-              </h4>
-              <h4 className='bg-white flex items-center gap-1 py-1 px-2 w-32'>
-                <TbBrandMysql />
-                MySQL
+                <PiFileSqlFill />
+                SQL
               </h4>
               <h4 className='bg-white flex items-center gap-1 py-1 px-2 w-32'>
                 <BiLogoPostgresql />
                 PostgreSQL
               </h4>
               <h4 className='bg-white flex items-center gap-1 py-1 px-2 w-32'>
-                <TbBrandDocker />
+                <TbDatabase />
+                NoSQL
+              </h4>
+              <h4 className='bg-white flex items-center gap-1 py-1 px-2 w-32'>
+                <SiMongodb />
+                MongoDB
+              </h4>
+              <h4 className='bg-white flex items-center gap-1 py-1 px-2 w-32'>
+                <SiFirebase />
+                Firebase
+              </h4>
+              <h4 className='bg-white flex items-center gap-1 py-1 px-2 w-32'>
+                <SiDocker />
                 Docker
               </h4>
               <h4 className='bg-white flex items-center gap-1 py-1 px-2 w-32'>
@@ -125,11 +128,11 @@ const Resume = () => (
                 YAML
               </h4>
               <h4 className='bg-white flex items-center gap-1 py-1 px-2 w-32'>
-                <TbBrandGithub />
+                <SiGithub />
                 Github
               </h4>
               <h4 className='bg-white flex items-center gap-1 py-1 px-2 w-32'>
-                <TbBrandPython />
+                <SiPython />
                 Python
               </h4>
               <h4 className='bg-white flex items-center gap-1 py-1 px-2 w-32'>
@@ -144,7 +147,7 @@ const Resume = () => (
             <h3 className='text-lg'>Design</h3>
             <div className='flex flex-col gap-2 text-zinc-900'>
               <h4 className='bg-white flex items-center gap-1 py-1 px-2 w-32'>
-                <TbBrandFigma />
+                <BiLogoFigma />
                 Figma
               </h4>
               <h4 className='bg-white flex items-center gap-1 py-1 px-2 w-32'>
@@ -176,8 +179,9 @@ const Resume = () => (
     <div className='flex flex-col gap-2.5 max-w-2xl'>
       <h2 className='text-3xl font-semibold'>Experience</h2>
       <div className='text-sm'>
-        <p className='font-normal'>2019-2023 - Front Point</p>
+        <p className='font-normal'>2019-2023</p>
         <p className='font-normal'>Project Manager & Product Owner</p>
+        <p className='font-normal'>Front Point Product Services Limited</p>
         <ul className='pl-6 mt-2.5 flex flex-col gap-2.5 list-disc'>
           <li>
             Manage a cross-functional team of 5 members and vendors for {''}

@@ -9,7 +9,7 @@ const ProjectItem = ({
   github,
   website,
 }) => (
-  <div className='flex flex-col gap-1 max-w-xl shadow-[0px_0px_20px_5px_rgb(0,0,0,0.0)] bg-zinc-800 shadow-zinc-700 p-5 rounded-xl mt-5'>
+  <div className='flex flex-col gap-1 max-w-lg shadow-[0px_0px_20px_5px_rgb(0,0,0,0.0)] bg-zinc-800 shadow-zinc-700 p-5 rounded-xl mt-5'>
     <h3 className='font-semibold '>{title}</h3>
     <h3 className='text-sm max-w-xl'>{description}</h3>
     <div className='flex flex-col gap-2'>

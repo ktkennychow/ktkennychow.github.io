@@ -41,11 +41,11 @@ export default [
     id: 2,
     title: 'OnlyFriends - Private Message Board',
     description:
-      'A real-time message board for only your friends! Where you can only sign in with a secret code.',
+      'A real-time message board for only your friends! Where you can only sign in with a secret code. (1211 for the demo)',
     imgUrl: 'assets/proj_photo_of.jpg',
     github: 'https://github.com/kennychowpd/nextjs-onlyfriends',
     website: 'https://nextjs-onlyfriends.vercel.app/',
-    stack: ['JavaScript', 'React', 'Next.js', 'TailwindCSS', 'Firebase'],
+    stack: ['JavaScript', 'React', 'Next.js', 'TailwindCSS', 'Express','Firebase'],
   },
   {id: 3,
   title: 'Markdown Previewer Retro',
