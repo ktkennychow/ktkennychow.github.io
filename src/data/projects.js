@@ -45,16 +45,17 @@ export default [
     imgUrl: 'assets/proj_photo_of.jpg',
     github: 'https://github.com/kennychowpd/nextjs-onlyfriends',
     website: 'https://nextjs-onlyfriends.vercel.app/',
-    stack: ['JavaScript', 'React', 'Next.js', 'TailwindCSS', 'Express','Firebase'],
+    stack: ['JavaScript', 'React', 'Next.js', 'TailwindCSS', 'Express', 'Firebase'],
   },
-  {id: 3,
-  title: 'Markdown Previewer Retro',
+  {
+    id: 3,
+    title: 'Markdown Previewer Retro',
     description:
       'A retro-styled markdown previewer to time travel with.',
     imgUrl: 'assets/proj_photo_mp.jpg',
     github: 'https://github.com/kennychowpd/retro-markdown-previewer',
     website: 'https://retro-markdown-previewer.onrender.com/',
     stack: ['Typescript', 'React', 'TailwindCSS'],
-},
-  
+  },
+
 ]
