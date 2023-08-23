@@ -1,16 +1,16 @@
 import { Si1001Tracklists } from 'react-icons/si';
 
 export default [
-  // {
-  //   id: 1,
-  //   title: 'Everyday AI - SaaS',
-  //   description:
-  //     'Every AI tool you will ever need to increase productivity for life and work.',
-  //   imgUrl: 'assets/proj_photo_ea.jpg',
-  //   github: 'https://google.com',
-  //   website: 'https://google.com',
-  //   stack: ['TypeScript', 'React', 'Next.js', 'TailwindCSS', 'MySQL', 'Stripe'],
-  // },
+  {
+    id: 1,
+    title: 'Everyday AI - SaaS',
+    description:
+      'Every AI tool you will ever need to increase productivity for life and work.',
+    imgUrl: 'assets/proj_photo_ea.jpg',
+    github: 'https://github.com/kennychowpd/everyday-ai-saas',
+    website: 'https://everyday-ai-saas.vercel.app/',
+    stack: ['TypeScript', 'React', 'Next.js', 'TailwindCSS', 'MySQL', 'Stripe'],
+  },
   // {
   //   id: 2,
   //   title: `KeepClimbin' - E-com w/ CMS`,
@@ -21,7 +21,7 @@ export default [
   //   stack: ['TypeScript', 'React', 'Next.js', 'TailwindCSS', 'MySQL', 'Stripe'],
   // },
   {
-    id: 1,
+    id: 2,
     title: 'WiserJournal - Journaling + AI',
     description:
       'Daily journaling, reflection, and self-improvement with an AI coach, personalized for you.',
@@ -38,8 +38,8 @@ export default [
     ],
   },
   {
-    id: 2,
-    title: 'OnlyFriends - Private Message Board',
+    id: 3,
+    title: 'FriendsOnly - Private Message Board',
     description:
       'A real-time message board for only your friends! Where you can only sign in with a secret code. (1211 for the demo)',
     imgUrl: 'assets/proj_photo_of.jpg',
@@ -48,7 +48,7 @@ export default [
     stack: ['JavaScript', 'React', 'Next.js', 'TailwindCSS', 'Express', 'Firebase'],
   },
   {
-    id: 3,
+    id: 4,
     title: 'Markdown Previewer Retro',
     description:
       'A retro-styled markdown previewer to time travel with.',
