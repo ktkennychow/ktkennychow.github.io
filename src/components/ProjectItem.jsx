@@ -1,5 +1,4 @@
 import React from 'react'
-import { Tb123 } from 'react-icons/tb'
 
 const ProjectItem = ({
   title,
@@ -10,7 +9,7 @@ const ProjectItem = ({
   website,
 }) => (
   <div className='flex flex-col gap-1 max-w-lg shadow-[0px_0px_20px_5px_rgb(0,0,0,0.0)] bg-zinc-800 shadow-zinc-700 p-5 rounded-xl mt-5'>
-    <h3 className='font-semibold '>{title}</h3>
+    <h2 className='font-semibold '>{title}</h2>
     <h3 className='text-sm max-w-xl'>{description}</h3>
     <div className='flex flex-col gap-2'>
       <img
@@ -41,7 +40,29 @@ const ProjectItem = ({
               />
             </svg>
           </div>
-        ) : null}
+        ) : (
+          <div className='flex gap-1'>
+            <a
+              href={github}
+              target='_blank'
+              rel='noopener noreferrer'
+              className='underline-offset-4 text-sm md:text-base line-through'>
+              GitHub Repo
+            </a>
+            <svg
+              width='8'
+              height='8'
+              viewBox='0 0 8 8'
+              fill='none'
+              xmlns='http://www.w3.org/2000/svg'>
+              <path
+                id='Vector 6'
+                d='M1 1H7M7 1V7M7 1L1 7'
+                stroke='white'
+              />
+            </svg>
+          </div>
+        )}
         {website.length > 0 ? (
           <div className='flex gap-1'>
             <a
@@ -64,7 +85,29 @@ const ProjectItem = ({
               />
             </svg>
           </div>
-        ) : null}
+        ) : (
+          <div className='flex gap-1'>
+            <a
+              href={website}
+              target='_blank'
+              rel='noopener noreferrer'
+              className='line-through underline-offset-4 text-sm md:text-base'>
+              Live Website
+            </a>
+            <svg
+              width='8'
+              height='8'
+              viewBox='0 0 8 8'
+              fill='none'
+              xmlns='http://www.w3.org/2000/svg'>
+              <path
+                id='Vector 6'
+                d='M1 1H7M7 1V7M7 1L1 7'
+                stroke='white'
+              />
+            </svg>
+          </div>
+        )}
       </div>
       <div>
         <p className='flex flex-wrap gap-2 flex-row items-center justify-start text-xs md:text-sm'>

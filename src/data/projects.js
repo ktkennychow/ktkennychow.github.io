@@ -42,8 +42,8 @@ export default [
     title: 'FriendsOnly - Private Message Board',
     description:
       'A real-time message board for only your friends! Where you can only sign in with a secret code. (1211 for the demo)',
-    imgUrl: 'assets/proj_photo_of.jpg',
-    github: 'https://github.com/kennychowpd/nextjs-onlyfriends',
+    imgUrl: 'assets/proj_photo_fo.jpg',
+    github: 'https://github.com/kennychowpd/nextjs-friends-only',
     website: 'https://nextjs-onlyfriends.vercel.app/',
     stack: ['JavaScript', 'React', 'Next.js', 'TailwindCSS', 'Express', 'Firebase'],
   },
@@ -51,7 +51,7 @@ export default [
     id: 4,
     title: 'Markdown Previewer Retro',
     description:
-      'A retro-styled markdown previewer to time travel with.',
+      'A retro-styled markdown previewer to time travel with! Step into a world where nostalgia and modern functionality collide.',
     imgUrl: 'assets/proj_photo_mp.jpg',
     github: 'https://github.com/kennychowpd/retro-markdown-previewer',
     website: 'https://retro-markdown-previewer.onrender.com/',
