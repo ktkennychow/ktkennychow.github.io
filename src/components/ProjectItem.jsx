@@ -46,7 +46,7 @@ const ProjectItem = ({
               href={github}
               target='_blank'
               rel='noopener noreferrer'
-              className='underline-offset-4 text-sm md:text-base line-through'>
+              className='underline-offset-4 text-sm md:text-base line-through pointer-events-none'>
               GitHub Repo
             </a>
             <svg
@@ -91,7 +91,7 @@ const ProjectItem = ({
               href={website}
               target='_blank'
               rel='noopener noreferrer'
-              className='line-through underline-offset-4 text-sm md:text-base'>
+              className='line-through underline-offset-4 text-sm md:text-base pointer-events-none'>
               Live Website
             </a>
             <svg
