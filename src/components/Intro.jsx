@@ -1,12 +1,11 @@
 import React from 'react'
 
-
 const Intro = () => {
   return (
     <div>
       <div
         id='about'
-        className='flex flex-col gap-4 pt-5 max-w-3xl'>
+        className='flex flex-col gap-4 pt-16 max-w-3xl'>
         <img
           src='assets/profilePic.png'
           alt='Profile Picture of Kenny Chow'
