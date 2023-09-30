@@ -179,8 +179,10 @@ const Resume = () => (
     <div className='flex flex-col gap-2.5 max-w-2xl'>
       <h2 className='text-3xl font-semibold'>Experience</h2>
       <div className='text-sm'>
-        <p className='font-normal'>2019-2023</p>
-        <p className='font-normal'>Project Manager & Product Owner</p>
+        <p className='font-normal'>2020-2023</p>
+        <p className='font-normal'>Product Owner</p>
+        <p className='font-normal'>2019-2020</p>
+        <p className='font-normal'>Product Designer</p>
         <p className='font-normal'>Front Point Product Services Limited</p>
         <ul className='pl-6 mt-2.5 flex flex-col gap-2.5 list-disc'>
           <li>
