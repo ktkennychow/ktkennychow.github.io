@@ -3,20 +3,9 @@ import { gsap } from 'gsap'
 
 const Nav = () => {
   const [currentPage, setCurrentPage] = React.useState('about')
-  const app = React.useRef()
-  React.useLayoutEffect(() => {
-    let ctx = gsap.context(() => {
-      gsap.from('ul', { opacity: 0, x: 100, duration: 0.75 })
-      gsap.from('.top-line', { opacity: 0, y: -1000, duration: 0.75 })
-      gsap.from('.bottom-line', { opacity: 0, y: 1000, duration: 0.75 })
-    }, app)
-    return () => ctx.revert()
-  }, [])
 
   return (
-    <div
-      ref={app}
-      onTouchStart={() => gsap.to('li', { x: 0, duration: 0.5 })}>
+    <div onTouchStart={() => gsap.to('li', { x: 0, duration: 0.5 })}>
       <nav className='sticky flex flex-col top-0 text-white h-screen items-center z-10'>
         <div className='sticky top-0 top-line w-1  flex-auto bg-white'></div>
         <ul className='sticky top-1/2 right-0 my-4 -translate-y-1/2'>
