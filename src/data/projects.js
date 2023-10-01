@@ -1,4 +1,3 @@
-import { Si1001Tracklists } from 'react-icons/si';
 
 export default [
   {
