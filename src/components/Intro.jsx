@@ -1,15 +1,16 @@
 import React from 'react'
 
+import profilePhoto from '../../public/assets/profilePic.webp'
+
 const Intro = () => {
   return (
     <div>
       <div
         id='about'
         className='flex flex-col gap-4 pt-16 max-w-3xl'>
-        <img
-          src='assets/profilePic.webp'
+        <div
           alt='Profile Picture of Kenny Chow'
-          className='w-36 md:w-72 bject-cover rounded-full'
+          className='bg-[url("assets/profilePic.webp")] w-36 h-36 md:h-72 md:w-72 rounded-full bg-cover'
         />
         <h1 className='text-4xl md:text-6xl text-white font-montserrat -m-1'>
           Kenny Chow
