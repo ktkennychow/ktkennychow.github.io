@@ -7,7 +7,7 @@ const Intro = () => {
         id='about'
         className='flex flex-col gap-4 pt-16 max-w-3xl'>
         <img
-          src='assets/profilePic.png'
+          src='assets/profilePic.webp'
           alt='Profile Picture of Kenny Chow'
           className='w-36 md:w-72 bject-cover rounded-full'
         />
