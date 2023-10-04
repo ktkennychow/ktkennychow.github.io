@@ -8,7 +8,7 @@ const Intro = () => {
         className='flex flex-col gap-4 pt-16 max-w-3xl'>
         <div
           alt='Profile Picture of Kenny Chow'
-          className='bg-[url("assets/profilePic.webp")] w-36 h-36 md:h-72 md:w-72 rounded-full bg-cover'
+          className='bg-[url("../../public/assets/profilePic.webp")] w-36 h-36 md:h-72 md:w-72 rounded-full bg-cover'
         />
         <h1 className='text-4xl md:text-6xl text-white font-montserrat -m-1'>
           Kenny Chow
