@@ -1,4 +1,4 @@
-import React, { useEffect, useLayoutEffect, useRef } from 'react'
+import React from 'react'
 import Nav from './components/Nav'
 import Intro from './components/Intro'
 import Projects from './components/Projects'
