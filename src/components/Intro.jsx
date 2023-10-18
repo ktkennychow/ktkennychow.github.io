@@ -35,7 +35,7 @@ const Intro = () => {
       </div>
       <div className='flex gap-1 mt-10'>
         <a
-          href='https://drive.google.com/file/d/1nD5nvxbNYADVaDUyVPl5At-R0wvToEWu/view?usp=drive_link'
+          href='https://drive.google.com/file/d/1VbVYHu7eL7Sj9xt7FfmqpH0yTFdM8ndV/view?usp=share_link'
           target='_blank'
           rel='noopener noreferrer'
           className='underline underline-offset-4 text-3xl'>
