@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const ProjectItem = ({
   title,
@@ -21,6 +21,7 @@ const ProjectItem = ({
         {github.length > 0 ? (
           <div className='flex gap-1'>
             <a
+              role='button'
               href={github}
               target='_blank'
               rel='noopener noreferrer'
@@ -43,10 +44,12 @@ const ProjectItem = ({
         ) : (
           <div className='flex gap-1'>
             <a
+              aria-disabled
+              role='button'
               href={github}
               target='_blank'
               rel='noopener noreferrer'
-              className='underline-offset-4 text-sm md:text-base line-through pointer-events-none'>
+              className='underline-offset-4 text-sm md:text-base pointer-events-none text-zinc-800'>
               GitHub Repo
             </a>
             <svg
@@ -66,6 +69,7 @@ const ProjectItem = ({
         {website.length > 0 ? (
           <div className='flex gap-1'>
             <a
+              role='button'
               href={website}
               target='_blank'
               rel='noopener noreferrer'
@@ -88,11 +92,13 @@ const ProjectItem = ({
         ) : (
           <div className='flex gap-1'>
             <a
+              aria-disabled
+              role='button'
               href={website}
               target='_blank'
               rel='noopener noreferrer'
               className='line-through underline-offset-4 text-sm md:text-base pointer-events-none'>
-              Live Website
+              Coming Soon
             </a>
             <svg
               width='8'
@@ -132,6 +138,6 @@ const ProjectItem = ({
       </div>
     </div>
   </div>
-)
+);
 
-export default ProjectItem
+export default ProjectItem;
