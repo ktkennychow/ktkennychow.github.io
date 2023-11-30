@@ -1,126 +1,18 @@
 import React from 'react';
 
-const ProjectItem = ({
-  title,
-  imgUrl,
-  stack,
-  description,
-  github,
-  website,
-}) => (
-  <div className='flex flex-col gap-1 max-w-lg shadow-[0px_0px_20px_5px_rgb(0,0,0,0.0)] bg-zinc-800 shadow-zinc-700 p-5 rounded-xl mt-5'>
-    <h2 className='font-semibold '>{title}</h2>
-    <h3 className='text-sm max-w-xl'>{description}</h3>
-    <div className='flex flex-col gap-2'>
-      <img
-        src={imgUrl}
-        alt='Project Photo'
-        className='object-cover object-top aspect-video'
-      />
-      <div className='flex gap-4'>
-        {github.length > 0 ? (
-          <div className='flex gap-1'>
-            <a
-              role='button'
-              href={github}
-              target='_blank'
-              rel='noopener noreferrer'
-              className='underline underline-offset-4 text-sm md:text-base'>
-              GitHub Repo
-            </a>
-            <svg
-              width='8'
-              height='8'
-              viewBox='0 0 8 8'
-              fill='none'
-              xmlns='http://www.w3.org/2000/svg'>
-              <path
-                id='Vector 6'
-                d='M1 1H7M7 1V7M7 1L1 7'
-                stroke='white'
-              />
-            </svg>
-          </div>
-        ) : (
-          <div className='flex gap-1'>
-            <a
-              aria-disabled
-              role='button'
-              href={github}
-              target='_blank'
-              rel='noopener noreferrer'
-              className='underline-offset-4 text-sm md:text-base pointer-events-none text-zinc-800'>
-              GitHub Repo
-            </a>
-            <svg
-              width='8'
-              height='8'
-              viewBox='0 0 8 8'
-              fill='none'
-              xmlns='http://www.w3.org/2000/svg'>
-              <path
-                id='Vector 6'
-                d='M1 1H7M7 1V7M7 1L1 7'
-                stroke='white'
-              />
-            </svg>
-          </div>
-        )}
-        {website.length > 0 ? (
-          <div className='flex gap-1'>
-            <a
-              role='button'
-              href={website}
-              target='_blank'
-              rel='noopener noreferrer'
-              className='underline underline-offset-4 text-sm md:text-base'>
-              Live Website
-            </a>
-            <svg
-              width='8'
-              height='8'
-              viewBox='0 0 8 8'
-              fill='none'
-              xmlns='http://www.w3.org/2000/svg'>
-              <path
-                id='Vector 6'
-                d='M1 1H7M7 1V7M7 1L1 7'
-                stroke='white'
-              />
-            </svg>
-          </div>
-        ) : (
-          <div className='flex gap-1'>
-            <a
-              aria-disabled
-              role='button'
-              href={website}
-              target='_blank'
-              rel='noopener noreferrer'
-              className='line-through underline-offset-4 text-sm md:text-base pointer-events-none'>
-              Coming Soon
-            </a>
-            <svg
-              width='8'
-              height='8'
-              viewBox='0 0 8 8'
-              fill='none'
-              xmlns='http://www.w3.org/2000/svg'>
-              <path
-                id='Vector 6'
-                d='M1 1H7M7 1V7M7 1L1 7'
-                stroke='white'
-              />
-            </svg>
-          </div>
-        )}
+const ProjectItem = ({ title, imgUrl, stack, description, github, website }) => (
+  <div className='mt-5 flex w-full flex-col gap-1 rounded-xl bg-zinc-800 p-5 shadow-[0px_0px_20px_3px_rgb(0,0,0,0.0)] shadow-zinc-700'>
+    <div className='flex flex-1 flex-col gap-2'>
+      <div>
+        <h2 className='font-semibold '>{title}</h2>
+        <h3 className='text-sm'>{description}</h3>
       </div>
       <div>
-        <p className='flex flex-wrap gap-2 flex-row items-center justify-start text-xs md:text-sm'>
+        <p className='flex flex-row flex-wrap items-center justify-start gap-2 text-xs'>
           {stack.map((item) => (
             <span
               key={item}
-              className='flex px-3 py-1.5 font-normal bg-white text-gray-900 rounded-full items-center gap-2'>
+              className='flex items-center gap-2 rounded-full bg-white px-2 py-1 font-normal text-gray-900'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 width='10'
@@ -135,6 +27,44 @@ const ProjectItem = ({
             </span>
           ))}
         </p>
+      </div>
+      <div className='flex gap-4'>
+        <div className='flex gap-1'>
+          <a
+            role='button'
+            href={github}
+            target='_blank'
+            rel='noopener noreferrer'
+            className='text-sm underline underline-offset-4 '>
+            GitHub Repo
+          </a>
+          <svg
+            width='8'
+            height='8'
+            viewBox='0 0 8 8'
+            fill='none'
+            xmlns='http://www.w3.org/2000/svg'>
+            <path id='Vector 6' d='M1 1H7M7 1V7M7 1L1 7' stroke='white' />
+          </svg>
+        </div>
+        <div className='flex gap-1'>
+          <a
+            role='button'
+            href={website}
+            target='_blank'
+            rel='noopener noreferrer'
+            className='text-sm underline underline-offset-4'>
+            Live Website
+          </a>
+          <svg
+            width='8'
+            height='8'
+            viewBox='0 0 8 8'
+            fill='none'
+            xmlns='http://www.w3.org/2000/svg'>
+            <path id='Vector 6' d='M1 1H7M7 1V7M7 1L1 7' stroke='white' />
+          </svg>
+        </div>
       </div>
     </div>
   </div>

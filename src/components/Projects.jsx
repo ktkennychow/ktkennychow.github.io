@@ -1,15 +1,12 @@
-import React from 'react'
-import ProjectItem from './ProjectItem'
-import projects from '../data/projects'
+import React from 'react';
+import ProjectItem from './ProjectItem';
+import projects from '../data/projects';
 
 const Projects = () => {
-
   return (
-    <div
-      id='projects'
-      className='flex flex-col gap-2.5 pt-10'>
-      <h2 className='text-3xl font-semibold'>Projects</h2>
-      <div className='flex flex-wrap gap-10'>
+    <div id='projects' className='flex flex-col'>
+      <h2 className='text-md font-semibold'>Projects</h2>
+      <div className='flex flex-wrap gap-2'>
         {projects.map((project) => (
           <ProjectItem
             key={project.id}
@@ -23,7 +20,7 @@ const Projects = () => {
         ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;

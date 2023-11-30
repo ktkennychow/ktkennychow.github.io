@@ -1,24 +1,16 @@
-import React from 'react'
-import Nav from './components/Nav'
-import Intro from './components/Intro'
-import Projects from './components/Projects'
-import Resume from './components/Resume'
-import Contact from './components/Contact'
+import React from 'react';
+import Intro from './components/Intro';
+import Projects from './components/Projects';
 
 const App = () => {
   return (
-    <div className='relative bg-zinc-900 z-10 text-stone-300 flex h-[100svh] w-full max-w-full font-poppins font-light overscroll-none justify-between overflow-scroll'>
-      <div
-        id='main'
-        className='flex flex-col gap-32 ml-5 md:ml-10'>
+    <div className='relative flex h-[100svh] w-full max-w-full justify-between overflow-x-hidden overscroll-none bg-zinc-900 font-poppins font-light leading-relaxed text-white text-opacity-80 '>
+      <div id='main' className='mx-auto flex w-full flex-col gap-16 p-10 md:max-w-3xl'>
         <Intro />
         <Projects />
-        <Resume />
-        <Contact />
       </div>
-      <Nav />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
