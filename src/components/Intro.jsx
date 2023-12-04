@@ -5,14 +5,18 @@ const Intro = () => {
   return (
     <div>
       <div id='about' className='flex max-w-3xl flex-col'>
-        <h1 className='font-montserrat text-2xl font-bold text-white'>Kenny Chow</h1>
-        <p className='flex-1'>Full-Stack Developer</p>
-        <div className='mt-10'>
+        <div className='flex flex-1 items-center gap-2'>
           <img
             src={profilePic}
             alt='Profile Picture of Kenny Chow'
-            className='m-5 mx-auto w-72 rounded-full md:float-left md:mx-5 md:w-36'
+            className='m-5 w-28 rounded-full'
           />
+          <div className='flex flex-1 flex-col'>
+            <h1 className='font-montserrat text-2xl font-bold text-white'>Kenny Chow</h1>
+            <p className='flex-1'>Full-Stack Developer</p>
+          </div>
+        </div>
+        <div className='mt-5'>
           <p>
             I like designing and developing products with great user experiences that help increase
             productivity and connect people.
