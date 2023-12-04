@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ProjectItem = ({ title, imgUrl, stack, description, github, website }) => (
-  <div className='mt-5 flex w-full flex-col gap-1 rounded-xl bg-zinc-800 p-5 shadow-[0px_0px_20px_3px_rgb(0,0,0,0.0)] shadow-zinc-700'>
+  <div className='mt-5 flex w-full flex-col gap-1 rounded-xl bg-zinc-800 p-5'>
     <div className='flex flex-1 flex-col gap-2'>
       <div>
         <h2 className='font-semibold '>{title}</h2>
