@@ -29,7 +29,7 @@ const Contact = () => (
       </div>
       <div className='flex gap-1'>
         <a
-          href='https://github.com/kennychowpd'
+          href='https://github.com/ktkennychow'
           target='_blank'
           rel='noopener noreferrer'
           className='underline underline-offset-4'>

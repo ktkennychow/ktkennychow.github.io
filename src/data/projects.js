@@ -6,7 +6,7 @@ export default [
     imgUrl: 'assets/proj_photo_ea.webp',
     github: 'https://github.com/kennychowpd/everyday-ai-saas',
     website: 'https://everyday-ai-saas.vercel.app/',
-    stack: ['TypeScript', 'React', 'Next.js', 'TailwindCSS', 'MySQL', 'Stripe'],
+    stack: ['TypeScript', 'React', 'Next.js', 'TailwindCSS', 'SQL', 'Stripe'],
   },
   {
     id: 3,
