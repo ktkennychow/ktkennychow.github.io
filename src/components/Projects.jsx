@@ -4,9 +4,9 @@ import projects from '../data/projects';
 
 const Projects = () => {
   return (
-    <div id='projects' className='flex flex-col'>
+    <div id='projects' className='flex h-full flex-col'>
       <h2 className='text-md font-semibold'>Projects</h2>
-      <div className='flex flex-wrap gap-2'>
+      <div className='mt-5 flex flex-wrap gap-5'>
         {projects.map((project) => (
           <ProjectItem
             key={project.id}

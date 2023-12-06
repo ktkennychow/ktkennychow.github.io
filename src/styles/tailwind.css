@@ -8,9 +8,6 @@
   box-sizing: border-box;
 }
 
-.viewbox {
-  position: relative;
-  height: 100svh;
-  overflow: scroll;
-  width: 100%;
+body {
+  height: 100%;
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ProjectItem = ({ title, imgUrl, stack, description, github, website }) => (
-  <div className='mt-5 flex w-full flex-col gap-1 rounded-xl bg-zinc-800 p-5'>
+  <div className='flex w-full flex-col gap-1 rounded-xl bg-zinc-800 p-5'>
     <div className='flex flex-1 flex-col gap-2'>
       <div>
         <h2 className='font-semibold '>{title}</h2>
@@ -13,16 +13,6 @@ const ProjectItem = ({ title, imgUrl, stack, description, github, website }) => 
             <span
               key={item}
               className='flex items-center gap-2 rounded-full bg-white px-2 py-1 font-normal text-gray-900'>
-              <svg
-                xmlns='http://www.w3.org/2000/svg'
-                width='10'
-                height='10'
-                viewBox='0 0 20 20
-                '
-                className='w-4'>
-                <path d='M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z' />
-              </svg>
-
               {item}
             </span>
           ))}

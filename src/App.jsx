@@ -4,8 +4,8 @@ import Projects from './components/Projects';
 
 const App = () => {
   return (
-    <div className='relative flex h-[100svh] w-full max-w-full justify-between overflow-x-hidden overscroll-none bg-zinc-900 font-poppins font-light leading-relaxed text-white text-opacity-80'>
-      <div id='main' className='mx-auto flex w-full flex-col gap-16 p-10 md:max-w-3xl'>
+    <div className='flex min-h-screen w-full justify-between overscroll-none bg-zinc-900 p-10 font-poppins font-light leading-relaxed text-white text-opacity-80'>
+      <div id='main' className='mx-auto flex flex-col gap-16 md:max-w-3xl'>
         <Intro />
         <Projects />
       </div>
