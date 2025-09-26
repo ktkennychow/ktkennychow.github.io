@@ -4,7 +4,7 @@ const ProjectItem = ({ title, imgUrl, stack, description, github, website }) => 
   <div className='flex w-full flex-col gap-1 rounded-xl bg-zinc-800 p-5'>
     <div className='flex flex-1 flex-col gap-2'>
       <div>
-        <h2 className='font-semibold '>{title}</h2>
+        <h2 className='font-semibold'>{title}</h2>
         <h3 className='text-sm'>{description}</h3>
       </div>
       <div>

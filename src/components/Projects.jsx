@@ -3,6 +3,10 @@ import ProjectItem from './ProjectItem';
 import projects from '../data/projects';
 
 const Projects = () => {
+  if (projects.length === 0) {
+    return null;
+  }
+  
   return (
     <div id='projects' className='flex h-full flex-col'>
       <h2 className='text-md font-semibold'>Projects</h2>
