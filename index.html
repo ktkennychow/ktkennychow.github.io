@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@300;400;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@300;400;600&display=swap"
       rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -18,152 +18,132 @@
         <div id="about">
           <div class="intro-header">
             <div class="profile-pic-container">
-              <img
-                src="assets/profilePic.webp"
-                alt="Profile Picture of Kenny Chow"
-                class="profile-pic" />
+              <img src="assets/profilePic.webp" alt="Profile Picture of Kenny Chow" class="profile-pic" />
             </div>
-            <div class="intro-content">
+            <div class="intro">
               <h1>Kenny Chow</h1>
-              <h2>Software Development | Product</h2>
-
-              <!-- Contact Links -->
-              <div id="contact">
-                <div class="contact-links">
-                  <div class="contact-link">
-                    <a
-                      href="https://drive.google.com/file/d/1knpwi09rzMNddL9lO0O75oeqOmvN1fug/view?usp=sharing"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      >Resume</a
-                    >
-                    <svg
-                      width="8"
-                      height="8"
-                      viewBox="0 0 8 8"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 1H7M7 1V7M7 1L1 7" stroke="white" />
-                    </svg>
-                  </div>
-                  <div class="contact-link">
-                    <a
-                      href="https://linkedin.com/in/ktkennychow"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      >Linkedin</a
-                    >
-                    <svg
-                      width="8"
-                      height="8"
-                      viewBox="0 0 8 8"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 1H7M7 1V7M7 1L1 7" stroke="white" />
-                    </svg>
-                  </div>
-                  <div class="contact-link">
-                    <a
-                      href="https://github.com/ktkennychow"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      >GitHub</a
-                    >
-                    <svg
-                      width="8"
-                      height="8"
-                      viewBox="0 0 8 8"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 1H7M7 1V7M7 1L1 7" stroke="white" />
-                    </svg>
-                  </div>
-                  <div class="contact-link">
-                    <a href="mailto:ktkennychow@gmail.com">ktkennychow@gmail.com</a>
-                    <svg
-                      width="8"
-                      height="8"
-                      viewBox="0 0 8 8"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 1H7M7 1V7M7 1L1 7" stroke="white" />
-                    </svg>
-                  </div>
+              <div class="intro-content">
+                <p>Software Development | Product</p>
+                <div class="link-container">
+                  <a
+                    href="https://drive.google.com/file/d/1knpwi09rzMNddL9lO0O75oeqOmvN1fug/view?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Resume</a
+                  >
+                  <a href="https://linkedin.com/in/ktkennychow" target="_blank" rel="noopener noreferrer">Linkedin</a>
+                  <a href="https://github.com/ktkennychow" target="_blank" rel="noopener noreferrer">GitHub</a>
+                  <a href="mailto:ktkennychow@gmail.com">ktkennychow@gmail.com</a>
                 </div>
               </div>
-
-              <p class="personal-description">
-                Climbing, reading and listening to podcasts in my free time.
-              </p>
             </div>
           </div>
 
+          <p class="personal-description">Climbing, reading, cooking and listening to podcasts in my free time.</p>
+
+          <!-- Works Section -->
+          <div id="works" class="projects-section">
+            <h2>Works</h2>
+            <div class="projects-container">
+              <div class="project-item">
+                <h3>Volan.ai</h3>
+                <h4>2023 - present</h4>
+                <p>Enterprise real-time micro-location monitoring & analytics systems using wireless mesh geofencing.</p>
+                <div class="project-stack">
+                  <p>TypeScript</p>
+                  <p>React</p>
+                  <p>CSS</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projects Section -->
+          <!-- <div id="projects" class="projects-section">
+            <h2>Projects</h2>
+            <div class="projects-container">
+              <div class="project-item">
+                <h3>Weather Dashboard</h3>
+                <p>A responsive weather application with location-based forecasts and interactive charts.</p>
+                <div class="project-stack">
+                  <p>TypeScript</p>
+                  <p>React</p>
+                  <p>Tailwind CSS</p>
+                  <p>OpenWeather API</p>
+                </div>
+                <div class="link-container">
+                  <a href="https://github.com/example" target="_blank" rel="noopener noreferrer">Codebase</a>
+                  <a href="https://example.com" target="_blank" rel="noopener noreferrer">Live</a>
+                </div>
+              </div>
+            </div> -->
+          </div>
           <!-- BookShelf Section -->
           <div class="bookshelf">
             <div class="bookshelf-header">
-              <h3>BookShelf</h3>
-              <p class="bookshelf-subtitle">
-                Only books I have read and will consider reading again.
-              </p>
+              <h2>Bookshelf</h2>
+              <p>Only books I have read and will consider reading again.</p>
             </div>
-
-            <div class="book">
-              <p class="book-title">Anything You Want</p>
-              <p class="book-author">by Derek Sivers</p>
+            <div class="book-container">
+              <div class="book-header">
+                <h3>Anything You Want</h3>
+                <h4>by Derek Sivers</h4>
+              </div>
             </div>
-
-            <div class="book">
-              <p class="book-title">Discourses, Fragments, and Letters</p>
-              <p class="book-author">by Epictetus & Robin Hard</p>
+            <div class="book-container">
+              <div class="book-header">
+                <h3>Discourses, Fragments, and Letters</h3>
+                <h4>by Epictetus & Robin Hard</h4>
+              </div>
+            </div>  
+            <div class="book-container">
+              <div class="book-header">
+                <h3>Factfulness</h3>
+                <h4>by Hans Rosling</h4>
+              </div>
             </div>
-
-            <div class="book">
-              <p class="book-title">Factfulness</p>
-              <p class="book-author">by Hans Rosling</p>
+            <div class="book-container">
+              <div class="book-header">
+                <h3>Hell Yeah or No</h3>
+                <h4>by Derek Sivers</h4>
+              </div>
             </div>
-
-            <div class="book">
-              <p class="book-title">Hell Yeah or No</p>
-              <p class="book-author">by Derek Sivers</p>
+            <div class="book-container">
+              <div class="book-header">
+                <h3>How to Live</h3>
+                <h4>by Derek Sivers</h4>
+              </div>
             </div>
-
-            <div class="book">
-              <p class="book-title">How to Live</p>
-              <p class="book-author">by Derek Sivers</p>
+            <div class="book-container">
+              <div class="book-header">
+                <h3>How to Solve it</h3>
+                <h4>by George Polya</h4>
+              </div>
             </div>
-
-            <div class="book">
-              <p class="book-title">How to Solve it</p>
-              <p class="book-author">by George Polya</p>
+            <div class="book-container">
+              <div class="book-header">
+                <h3>On Writing Well</h3>
+                <h4>by William Zinsser</h4>
+              </div>
             </div>
-
-            <div class="book">
-              <p class="book-title">On Writing Well</p>
-              <p class="book-author">by William Zinsser</p>
+            <div class="book-container">
+              <div class="book-header">
+                <h3>Sapiens: A Brief History of Humankind</h3>
+                <h4>by Yuval Noah Harari</h4>
+              </div>
             </div>
-
-            <div class="book">
-              <p class="book-title">Sapiens: A Brief History of Humankind</p>
-              <p class="book-author">by Yuval Noah Harari</p>
+            <div class="book-container">
+              <div class="book-header">
+                <h3>The Courage to Be Disliked</h3>
+                <h4>by Ichiro Kishimi & Fumitake Koga</h4>
+              </div>
             </div>
-
-            <div class="book">
-              <p class="book-title">The Courage to Be Disliked</p>
-              <p class="book-author">by Ichiro Kishimi & Fumitake Koga</p>
+            <div class="book-container">
+              <div class="book-header">
+                <h3>The Psychology of Money</h3>
+                <h4>by Morgan Housel</h4>
+              </div>
             </div>
-
-            <div class="book">
-              <p class="book-title">The Psychology of Money</p>
-              <p class="book-author">by Morgan Housel</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Projects Section -->
-        <div id="projects" class="projects-section">
-          <h2 class="projects-title">Projects</h2>
-          <div class="projects-container">
-            <!-- Projects will be added here when available -->
           </div>
         </div>
       </div>
