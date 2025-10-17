@@ -1,20 +1,172 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Kenny Chow's portfolio website" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kenny Chow</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <script
-      type="module"
-      src="/src/main.jsx"></script>
+    <div class="container">
+      <div id="main">
+        <!-- Intro Section -->
+        <div id="about">
+          <div class="intro-header">
+            <div class="profile-pic-container">
+              <img
+                src="assets/profilePic.webp"
+                alt="Profile Picture of Kenny Chow"
+                class="profile-pic" />
+            </div>
+            <div class="intro-content">
+              <h1>Kenny Chow</h1>
+              <h2>Software Development | Product</h2>
+
+              <!-- Contact Links -->
+              <div id="contact">
+                <div class="contact-links">
+                  <div class="contact-link">
+                    <a
+                      href="https://drive.google.com/file/d/1knpwi09rzMNddL9lO0O75oeqOmvN1fug/view?usp=sharing"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Resume</a
+                    >
+                    <svg
+                      width="8"
+                      height="8"
+                      viewBox="0 0 8 8"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 1H7M7 1V7M7 1L1 7" stroke="white" />
+                    </svg>
+                  </div>
+                  <div class="contact-link">
+                    <a
+                      href="https://linkedin.com/in/ktkennychow"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Linkedin</a
+                    >
+                    <svg
+                      width="8"
+                      height="8"
+                      viewBox="0 0 8 8"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 1H7M7 1V7M7 1L1 7" stroke="white" />
+                    </svg>
+                  </div>
+                  <div class="contact-link">
+                    <a
+                      href="https://github.com/ktkennychow"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >GitHub</a
+                    >
+                    <svg
+                      width="8"
+                      height="8"
+                      viewBox="0 0 8 8"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 1H7M7 1V7M7 1L1 7" stroke="white" />
+                    </svg>
+                  </div>
+                  <div class="contact-link">
+                    <a href="mailto:ktkennychow@gmail.com">ktkennychow@gmail.com</a>
+                    <svg
+                      width="8"
+                      height="8"
+                      viewBox="0 0 8 8"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 1H7M7 1V7M7 1L1 7" stroke="white" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <p class="personal-description">
+                Climbing, reading and listening to podcasts in my free time.
+              </p>
+            </div>
+          </div>
+
+          <!-- BookShelf Section -->
+          <div class="bookshelf">
+            <div class="bookshelf-header">
+              <h3>BookShelf</h3>
+              <p class="bookshelf-subtitle">
+                Only books I have read and will consider reading again.
+              </p>
+            </div>
+
+            <div class="book">
+              <p class="book-title">Anything You Want</p>
+              <p class="book-author">by Derek Sivers</p>
+            </div>
+
+            <div class="book">
+              <p class="book-title">Discourses, Fragments, and Letters</p>
+              <p class="book-author">by Epictetus & Robin Hard</p>
+            </div>
+
+            <div class="book">
+              <p class="book-title">Factfulness</p>
+              <p class="book-author">by Hans Rosling</p>
+            </div>
+
+            <div class="book">
+              <p class="book-title">Hell Yeah or No</p>
+              <p class="book-author">by Derek Sivers</p>
+            </div>
+
+            <div class="book">
+              <p class="book-title">How to Live</p>
+              <p class="book-author">by Derek Sivers</p>
+            </div>
+
+            <div class="book">
+              <p class="book-title">How to Solve it</p>
+              <p class="book-author">by George Polya</p>
+            </div>
+
+            <div class="book">
+              <p class="book-title">On Writing Well</p>
+              <p class="book-author">by William Zinsser</p>
+            </div>
+
+            <div class="book">
+              <p class="book-title">Sapiens: A Brief History of Humankind</p>
+              <p class="book-author">by Yuval Noah Harari</p>
+            </div>
+
+            <div class="book">
+              <p class="book-title">The Courage to Be Disliked</p>
+              <p class="book-author">by Ichiro Kishimi & Fumitake Koga</p>
+            </div>
+
+            <div class="book">
+              <p class="book-title">The Psychology of Money</p>
+              <p class="book-author">by Morgan Housel</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projects Section -->
+        <div id="projects" class="projects-section">
+          <h2 class="projects-title">Projects</h2>
+          <div class="projects-container">
+            <!-- Projects will be added here when available -->
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
