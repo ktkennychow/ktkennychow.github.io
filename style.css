@@ -1,133 +1,66 @@
+/* CSS Variables */
+:root {
+    --color-text-primary: #d2d2d2;
+    --color-background: #13181b;
+    --color-accent: #44ba87;
+    --color-accent-dark: #18231e;
+    --color-accent-super-dark: #0e121a;
+    --color-black: #000000;
+    --color-border: #367258;
+    --color-tag-text: #111827;
+    --color-tag-bg: #d2d2d2;
+}
+
 /* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
-    height: 100%;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 300;
-    line-height: auto;
-    color: #d2d2d2;
-    background-color: #13181b; /* zinc-900 */
-    min-height: 100vh;
-    width: 100%;
-    overscroll-behavior: none;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  line-height: auto;
+  color: var(--color-text-primary);
+  background-color: var(--color-background);
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 1.5rem;
+  background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, var(--color-accent-super-dark) 5px ), repeating-linear-gradient( var(--color-accent-super-dark), var(--color-accent-dark) ); 
 }
-
 /* Typography */
 h1 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.75rem;
-    font-weight: 500;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 0.75;
 }
 
 h2 {
-    font-size: 1.25rem;
-    font-weight: 600;
+    font-size: 1.06rem;
+    font-weight: 500;
 }
 
 h3 {
-    font-size: 1rem;
+    font-size: 0.94rem;
     font-weight: 300;
 }
 
 h4 {
-    font-size: 0.75rem;
+    font-size: 0.84rem;
     font-weight: 300;
 }
 
 p {
-    font-size: 0.875rem;
+    font-size: 0.75rem;
 }
 
-/* Main Container */
-.container {
-    display: flex;
-    min-height: 100vh;
-    width: 100%;
-    justify-content: space-between;
-    padding: 1.5rem;
-}
-
-#main {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-    width: 100%;
-    max-width: 100%;
-}
-
-@media (min-width: 768px) {
-    #main {
-        max-width: 48rem;
-    }
-}
-
-/* About/Intro Section */
-#about {
-    display: flex;
-    max-width: 48rem;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-.intro-header {
-    display: flex;
-    flex: 1;
-    align-items: center;
-    gap: 1rem;
-}
-
-.profile-pic-container {
-    min-width: 12rem;
-    min-height: 12rem;
-    width: 12rem;
-    height: 12rem;
-    background-color: #000000;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.profile-pic {
-    width: 100%
-}
-
-.intro {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.intro-content {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-/* Contact Section */
-#contact {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-.contact-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    line-height: 0;
-}
 a {
-  font-size: 0.875rem;
-  color: #44ba87;
+  font-size: 0.75rem;
+  color: var(--color-accent);
   display: inline-flex;
   align-items: center;
   gap: 0.25rem;
@@ -143,46 +76,85 @@ a::after {
   background-repeat: no-repeat;
   flex-shrink: 0;
 }
-/* BookShelf Section */
-.bookshelf {
+
+/* Main Container */
+#main {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 2rem;
+  width: 100%;
+  max-width: 100%;
 }
-.bookshelf-header {
+
+@media (min-width: 768px) {
+  #main {
+      max-width: 48rem;
+  }
+}
+
+/* About/Intro Section */
+#about {
   display: flex;
+  max-width: 48rem;
   flex-direction: column;
+  gap: 1.5rem;
 }
-.book-container {
-  border-left: 0.25rem solid #367258;
-  padding-left: 1.25rem;
+
+.intro-container {
   display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 1rem;
 }
-.book-header {
+.profile-pic-container {
+  width: 12rem;
+  height: 100%;
+  max-width: 12rem;
+  max-height: 12rem;
+  background-color: var(--color-black);
+  padding: 1rem;
+  border-radius: 1rem;
   display: flex;
-  flex-direction: column;
-  gap: 0rem;
+  align-items: center;
+  justify-content: center;
 }
-/* Projects Section */
-.projects-section {
-  display: flex;
+.profile-pic {
+  width: 100%;
+  @media (max-width: 768px) {
     height: 100%;
-    flex-direction: column;
+    object-fit: cover;
+  }
 }
+.intro {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.section-header {
+  display: flex;
+  flex-direction: column;
+}
+/* Works & Projects Section */
 .projects-container {
-    margin-top: 1.25rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 .project-item {
   display: flex;
   width: 100%;
   flex-direction: column;
   gap: 0.5rem;
-  border-left: 0.25rem solid #367258;
+  border-left: 0.25rem solid var(--color-border);
   padding: 0.5rem 1.25rem;
 }
 .project-stack {
@@ -200,15 +172,27 @@ a::after {
   align-items: center;
   gap: 0.5rem;
   border-radius: 9999px;
-  background-color: #d2d2d2;
+  background-color: var(--color-tag-bg);
   padding: 0.25rem 0.5rem;
   font-weight: 400;
-  color: #111827;
+  color: var(--color-tag-text);
 }
-.link-container {
+.links-container {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
   line-height: 0;
 }
-
+/* BookShelf Section */
+.book-container {
+  border-left: 0.25rem solid var(--color-border);
+  padding-left: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.book-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+}

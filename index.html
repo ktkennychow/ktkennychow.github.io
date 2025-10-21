@@ -13,139 +13,136 @@
       rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <div class="container">
-      <div id="main">
-        <!-- Intro Section -->
-        <div id="about">
-          <div class="intro-header">
-            <div class="profile-pic-container">
-              <img src="assets/profilePic.webp" alt="Profile Picture of Kenny Chow" class="profile-pic" />
-            </div>
-            <div class="intro">
-              <h1>Kenny Chow</h1>
-              <div class="intro-content">
-                <p>Software Development | Product</p>
-                <div class="link-container">
-                  <a
-                    href="https://drive.google.com/file/d/1knpwi09rzMNddL9lO0O75oeqOmvN1fug/view?usp=sharing"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Resume</a
-                  >
-                  <a href="https://linkedin.com/in/ktkennychow" target="_blank" rel="noopener noreferrer">Linkedin</a>
-                  <a href="https://github.com/ktkennychow" target="_blank" rel="noopener noreferrer">GitHub</a>
-                  <a href="mailto:ktkennychow@gmail.com">ktkennychow@gmail.com</a>
-                </div>
-              </div>
+  <body id="page-container">
+    <div id="main">
+      <!-- Intro Section -->
+      <div id="about">
+        <div class="intro-container">
+          <div class="profile-pic-container">
+            <img src="assets/profilePic.webp" alt="Profile Picture of Kenny Chow" class="profile-pic" />
+          </div>
+          <div class="intro">
+            <h1>Kenny Chow</h1>
+            <h3>Software Development | Product</h3>
+            <div class="links-container">
+              <a
+                href="https://drive.google.com/file/d/1knpwi09rzMNddL9lO0O75oeqOmvN1fug/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Resume</a
+              >
+              <a href="https://linkedin.com/in/ktkennychow" target="_blank" rel="noopener noreferrer">Linkedin</a>
+              <a href="https://github.com/ktkennychow" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="mailto:ktkennychow@gmail.com">ktkennychow@gmail.com</a>
             </div>
           </div>
+        </div>
 
-          <p class="personal-description">Climbing, reading, cooking and listening to podcasts in my free time.</p>
-
-          <!-- Works Section -->
-          <div id="works" class="projects-section">
-            <h2>Works</h2>
-            <div class="projects-container">
-              <div class="project-item">
-                <h3>Volan.ai</h3>
-                <h4>2023 - present</h4>
-                <p>Enterprise real-time micro-location monitoring & analytics systems using wireless mesh geofencing.</p>
-                <div class="project-stack">
-                  <p>TypeScript</p>
-                  <p>React</p>
-                  <p>CSS</p>
-                </div>
-              </div>
+        <p class="personal-description">Climbing, reading, cooking and listening to podcasts in my free time.</p>
+      </div>
+      <!-- Works Section -->
+      <div class="section">
+        <div class="section-header">
+          <h2>Works</h2>
+          <p></p>
+        </div>
+        <div class="projects-container">
+          <div class="project-item">
+            <h3>Volan.ai</h3>
+            <h4>2023 - present</h4>
+            <p>Enterprise real-time micro-location monitoring & analytics systems using wireless mesh geofencing.</p>
+            <div class="project-stack">
+              <p>TypeScript</p>
+              <p>React</p>
+              <p>CSS</p>
             </div>
           </div>
+        </div>
+      </div>
 
-          <!-- Projects Section -->
-          <!-- <div id="projects" class="projects-section">
-            <h2>Projects</h2>
-            <div class="projects-container">
-              <div class="project-item">
-                <h3>Weather Dashboard</h3>
-                <p>A responsive weather application with location-based forecasts and interactive charts.</p>
-                <div class="project-stack">
-                  <p>TypeScript</p>
-                  <p>React</p>
-                  <p>Tailwind CSS</p>
-                  <p>OpenWeather API</p>
-                </div>
-                <div class="link-container">
-                  <a href="https://github.com/example" target="_blank" rel="noopener noreferrer">Codebase</a>
-                  <a href="https://example.com" target="_blank" rel="noopener noreferrer">Live</a>
-                </div>
+      <!-- Projects Section -->
+      <!-- <div id="projects" class="projects-section">
+          <h2>Projects</h2>
+          <div class="projects-container">
+            <div class="project-item">
+              <h3>Weather Dashboard</h3>
+              <p>A responsive weather application with location-based forecasts and interactive charts.</p>
+              <div class="project-stack">
+                <p>TypeScript</p>
+                <p>React</p>
+                <p>Tailwind CSS</p>
+                <p>OpenWeather API</p>
               </div>
-            </div> -->
+              <div class="links-container">
+                <a href="https://github.com/example" target="_blank" rel="noopener noreferrer">Codebase</a>
+                <a href="https://example.com" target="_blank" rel="noopener noreferrer">Live</a>
+              </div>
+            </div>
+          </div> -->
+      <!-- BookShelf Section -->
+      <div class="section">
+        <div class="section-header">
+          <h2>Bookshelf</h2>
+          <p>Only books I have read and will consider reading again.</p>
+        </div>
+        <div class="book-container">
+          <div class="book-header">
+            <h3>Anything You Want</h3>
+            <h4>by Derek Sivers</h4>
           </div>
-          <!-- BookShelf Section -->
-          <div class="bookshelf">
-            <div class="bookshelf-header">
-              <h2>Bookshelf</h2>
-              <p>Only books I have read and will consider reading again.</p>
-            </div>
-            <div class="book-container">
-              <div class="book-header">
-                <h3>Anything You Want</h3>
-                <h4>by Derek Sivers</h4>
-              </div>
-            </div>
-            <div class="book-container">
-              <div class="book-header">
-                <h3>Discourses, Fragments, and Letters</h3>
-                <h4>by Epictetus & Robin Hard</h4>
-              </div>
-            </div>  
-            <div class="book-container">
-              <div class="book-header">
-                <h3>Factfulness</h3>
-                <h4>by Hans Rosling</h4>
-              </div>
-            </div>
-            <div class="book-container">
-              <div class="book-header">
-                <h3>Hell Yeah or No</h3>
-                <h4>by Derek Sivers</h4>
-              </div>
-            </div>
-            <div class="book-container">
-              <div class="book-header">
-                <h3>How to Live</h3>
-                <h4>by Derek Sivers</h4>
-              </div>
-            </div>
-            <div class="book-container">
-              <div class="book-header">
-                <h3>How to Solve it</h3>
-                <h4>by George Polya</h4>
-              </div>
-            </div>
-            <div class="book-container">
-              <div class="book-header">
-                <h3>On Writing Well</h3>
-                <h4>by William Zinsser</h4>
-              </div>
-            </div>
-            <div class="book-container">
-              <div class="book-header">
-                <h3>Sapiens: A Brief History of Humankind</h3>
-                <h4>by Yuval Noah Harari</h4>
-              </div>
-            </div>
-            <div class="book-container">
-              <div class="book-header">
-                <h3>The Courage to Be Disliked</h3>
-                <h4>by Ichiro Kishimi & Fumitake Koga</h4>
-              </div>
-            </div>
-            <div class="book-container">
-              <div class="book-header">
-                <h3>The Psychology of Money</h3>
-                <h4>by Morgan Housel</h4>
-              </div>
-            </div>
+        </div>
+        <div class="book-container">
+          <div class="book-header">
+            <h3>Discourses, Fragments, and Letters</h3>
+            <h4>by Epictetus & Robin Hard</h4>
+          </div>
+        </div>
+        <div class="book-container">
+          <div class="book-header">
+            <h3>Factfulness</h3>
+            <h4>by Hans Rosling</h4>
+          </div>
+        </div>
+        <div class="book-container">
+          <div class="book-header">
+            <h3>Hell Yeah or No</h3>
+            <h4>by Derek Sivers</h4>
+          </div>
+        </div>
+        <div class="book-container">
+          <div class="book-header">
+            <h3>How to Live</h3>
+            <h4>by Derek Sivers</h4>
+          </div>
+        </div>
+        <div class="book-container">
+          <div class="book-header">
+            <h3>How to Solve it</h3>
+            <h4>by George Polya</h4>
+          </div>
+        </div>
+        <div class="book-container">
+          <div class="book-header">
+            <h3>On Writing Well</h3>
+            <h4>by William Zinsser</h4>
+          </div>
+        </div>
+        <div class="book-container">
+          <div class="book-header">
+            <h3>Sapiens: A Brief History of Humankind</h3>
+            <h4>by Yuval Noah Harari</h4>
+          </div>
+        </div>
+        <div class="book-container">
+          <div class="book-header">
+            <h3>The Courage to Be Disliked</h3>
+            <h4>by Ichiro Kishimi & Fumitake Koga</h4>
+          </div>
+        </div>
+        <div class="book-container">
+          <div class="book-header">
+            <h3>The Psychology of Money</h3>
+            <h4>by Morgan Housel</h4>
           </div>
         </div>
       </div>
