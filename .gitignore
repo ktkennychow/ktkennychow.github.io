@@ -27,3 +27,7 @@ todo.md
 
 .playwright/*
 .playwright-mcp/*
+
+# Local PDF extract + vendored deps for scripts/rebuild_wedding_from_pdfs.py
+.pypdf/
+_pdf_extract/
